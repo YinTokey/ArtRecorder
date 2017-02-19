@@ -14,8 +14,9 @@
 		B30E02EC1E55EC220009B56E /* ArtRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B30E02EB1E55EC220009B56E /* ArtRecorderTests.m */; };
 		B30E02F71E55EC220009B56E /* ArtRecorderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B30E02F61E55EC220009B56E /* ArtRecorderUITests.m */; };
 		B3FE74E81E58C1D3009CBBDA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE74E71E58C1D3009CBBDA /* HomeViewController.m */; };
-		B3FE74EC1E58CBB0009CBBDA /* RecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE74EB1E58CBB0009CBBDA /* RecorderViewController.m */; };
 		B3FE74EF1E58CC66009CBBDA /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE74EE1E58CC66009CBBDA /* VideoViewController.m */; };
+		B3FE74F31E598916009CBBDA /* RecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE74F11E598916009CBBDA /* RecorderViewController.m */; };
+		B3FE74F41E598916009CBBDA /* RecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3FE74F21E598916009CBBDA /* RecorderViewController.xib */; };
 		EE3B50300BD5E1948DCF74A0 /* libPods-ArtRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */; };
 /* End PBXBuildFile section */
 
@@ -55,10 +56,11 @@
 		B3FE74E61E58C1D3009CBBDA /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		B3FE74E71E58C1D3009CBBDA /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		B3FE74E91E58C248009CBBDA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = "../../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/PrefixHeader.pch"; sourceTree = "<group>"; };
-		B3FE74EA1E58CBB0009CBBDA /* RecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderViewController.h; sourceTree = "<group>"; };
-		B3FE74EB1E58CBB0009CBBDA /* RecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecorderViewController.m; sourceTree = "<group>"; };
 		B3FE74ED1E58CC66009CBBDA /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		B3FE74EE1E58CC66009CBBDA /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		B3FE74F01E598916009CBBDA /* RecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderViewController.h; sourceTree = "<group>"; };
+		B3FE74F11E598916009CBBDA /* RecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecorderViewController.m; sourceTree = "<group>"; };
+		B3FE74F21E598916009CBBDA /* RecorderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecorderViewController.xib; sourceTree = "<group>"; };
 		D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArtRecorder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -203,8 +205,9 @@
 		B3FE74D81E57548C009CBBDA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B3FE74EA1E58CBB0009CBBDA /* RecorderViewController.h */,
-				B3FE74EB1E58CBB0009CBBDA /* RecorderViewController.m */,
+				B3FE74F01E598916009CBBDA /* RecorderViewController.h */,
+				B3FE74F11E598916009CBBDA /* RecorderViewController.m */,
+				B3FE74F21E598916009CBBDA /* RecorderViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FE74F41E598916009CBBDA /* RecorderViewController.xib in Resources */,
 				B30E02E11E55EC220009B56E /* LaunchScreen.storyboard in Resources */,
 				B30E02DE1E55EC220009B56E /* Assets.xcassets in Resources */,
 			);
@@ -505,8 +509,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FE74F31E598916009CBBDA /* RecorderViewController.m in Sources */,
 				B3FE74EF1E58CC66009CBBDA /* VideoViewController.m in Sources */,
-				B3FE74EC1E58CBB0009CBBDA /* RecorderViewController.m in Sources */,
 				B30E02D61E55EC220009B56E /* AppDelegate.m in Sources */,
 				B30E02D31E55EC220009B56E /* main.m in Sources */,
 				B3FE74E81E58C1D3009CBBDA /* HomeViewController.m in Sources */,

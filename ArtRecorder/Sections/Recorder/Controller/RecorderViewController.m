@@ -16,12 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor blueColor];
-    
+
+    self.navigationController.navigationBar.hidden = YES;
+
+    [self setupBtns];
     
 }
 
+- (void)setupBtns{
+    [[self.closeBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
+        [self.navigationController popViewControllerAnimated:NO];
+    }];
+}
 
 
 @end
