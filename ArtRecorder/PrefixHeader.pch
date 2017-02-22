@@ -19,7 +19,7 @@
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <Masonry.h>
-
+#import <SCRecorder/SCRecorder.h>
 
 
 
