@@ -14,6 +14,8 @@
 		B30E02EC1E55EC220009B56E /* ArtRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B30E02EB1E55EC220009B56E /* ArtRecorderTests.m */; };
 		B30E02F71E55EC220009B56E /* ArtRecorderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B30E02F61E55EC220009B56E /* ArtRecorderUITests.m */; };
 		B3F8BFFD1E5F38D300FE46AA /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EF97E01E5F382D00D1D3E1 /* libGPUImage.a */; };
+		B3F8C0041E5F39D200FE46AA /* FilterArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C0011E5F39D200FE46AA /* FilterArray.m */; };
+		B3F8C0051E5F39D200FE46AA /* FilterChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C0031E5F39D200FE46AA /* FilterChooseView.m */; };
 		B3FE74E81E58C1D3009CBBDA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE74E71E58C1D3009CBBDA /* HomeViewController.m */; };
 		B3FE74EF1E58CC66009CBBDA /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE74EE1E58CC66009CBBDA /* VideoViewController.m */; };
 		B3FE74F31E598916009CBBDA /* RecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE74F11E598916009CBBDA /* RecorderViewController.m */; };
@@ -94,6 +96,10 @@
 		B30E02F61E55EC220009B56E /* ArtRecorderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtRecorderUITests.m; sourceTree = "<group>"; };
 		B30E02F81E55EC220009B56E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3EF97D91E5F382D00D1D3E1 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = ../../../GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
+		B3F8C0001E5F39D200FE46AA /* FilterArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterArray.h; sourceTree = "<group>"; };
+		B3F8C0011E5F39D200FE46AA /* FilterArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterArray.m; sourceTree = "<group>"; };
+		B3F8C0021E5F39D200FE46AA /* FilterChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterChooseView.h; sourceTree = "<group>"; };
+		B3F8C0031E5F39D200FE46AA /* FilterChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterChooseView.m; sourceTree = "<group>"; };
 		B3FE74E61E58C1D3009CBBDA /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		B3FE74E71E58C1D3009CBBDA /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		B3FE74E91E58C248009CBBDA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = "../../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/PrefixHeader.pch"; sourceTree = "<group>"; };
@@ -230,6 +236,10 @@
 		B3E924011E5F2C4C00CE3B5F /* Filter */ = {
 			isa = PBXGroup;
 			children = (
+				B3F8C0001E5F39D200FE46AA /* FilterArray.h */,
+				B3F8C0011E5F39D200FE46AA /* FilterArray.m */,
+				B3F8C0021E5F39D200FE46AA /* FilterChooseView.h */,
+				B3F8C0031E5F39D200FE46AA /* FilterChooseView.m */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -620,6 +630,8 @@
 				B3FE74F31E598916009CBBDA /* RecorderViewController.m in Sources */,
 				B3FE74EF1E58CC66009CBBDA /* VideoViewController.m in Sources */,
 				B30E02D61E55EC220009B56E /* AppDelegate.m in Sources */,
+				B3F8C0041E5F39D200FE46AA /* FilterArray.m in Sources */,
+				B3F8C0051E5F39D200FE46AA /* FilterChooseView.m in Sources */,
 				B30E02D31E55EC220009B56E /* main.m in Sources */,
 				B3FE74E81E58C1D3009CBBDA /* HomeViewController.m in Sources */,
 			);
