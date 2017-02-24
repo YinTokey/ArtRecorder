@@ -14,7 +14,7 @@
 @property (nonatomic,strong) GPUImageView * filterView;
 @property (nonatomic,retain) GPUImageMovieWriter *writer;
 @property (nonatomic,retain) GPUImageOutput<GPUImageInput> *filter;
-
+@property (nonatomic,retain) FilterChooseView * chooseView;
 @end
 
 @implementation RecorderViewController
@@ -29,7 +29,7 @@
 
     
     _filterView = [[GPUImageView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:_filterView];
+    [self.view insertSubview:_filterView atIndex:0];
     
     self.camera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPreset1280x720 cameraPosition:AVCaptureDevicePositionBack];
     self.camera.outputImageOrientation = UIInterfaceOrientationPortrait;
@@ -46,12 +46,14 @@
     
     [self setupBtns];
     
-    FilterChooseView * chooseView = [[FilterChooseView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height-95-60, self.view.frame.size.width, 95)];
-    chooseView.backback = ^(GPUImageOutput<GPUImageInput> * filter){
+    _chooseView = [[FilterChooseView alloc] initWithFrame:CGRectMake(0, 80, self.view.frame.size.width, 95)];
+    @weakify(self);
+    _chooseView.backback = ^(GPUImageOutput<GPUImageInput> * filter){
+        @strongify(self);
         [self choose_callBack:filter];
     };
-    [self.view addSubview:chooseView];
-
+    [self.view addSubview:_chooseView];
+    
 }
 
 - (void)setupBtns{
