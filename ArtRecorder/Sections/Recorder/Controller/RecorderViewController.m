@@ -72,7 +72,7 @@
     [self.startBtn setTitle:@"stop" forState:UIControlStateSelected];
     [[self.startBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
         
-//        [self start_stop];
+        [self start_stop];
         
     }];
 }
