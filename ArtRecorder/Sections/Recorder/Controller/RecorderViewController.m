@@ -53,7 +53,7 @@
         [self choose_callBack:filter];
     };
     [self.view addSubview:_chooseView];
-    
+    _chooseView.hidden = YES;
 }
 
 - (void)setupBtns{
@@ -64,7 +64,11 @@
     
     [[self.filterBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
         
-        
+        if(_chooseView.hidden == YES){
+            _chooseView.hidden = NO;
+        }else{
+            _chooseView.hidden = YES;
+        }
         
     }];
     
