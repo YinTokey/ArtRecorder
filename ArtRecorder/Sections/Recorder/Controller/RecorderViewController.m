@@ -15,6 +15,9 @@
 @property (nonatomic,retain) GPUImageMovieWriter *writer;
 @property (nonatomic,retain) GPUImageOutput<GPUImageInput> *filter;
 @property (nonatomic,retain) FilterChooseView * chooseView;
+
+
+// Switching between front and back cameras
 @end
 
 @implementation RecorderViewController
@@ -57,6 +60,7 @@
 }
 
 - (void)setupBtns{
+
     [[self.closeBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
         [self.navigationController popViewControllerAnimated:NO];
     }];
@@ -79,6 +83,12 @@
         [self start_stop];
         
     }];
+    
+    [[self.switchBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
+        
+        
+    }];
+
 }
 
 #pragma mark 选择滤镜
@@ -144,5 +154,7 @@
     }
     
 }
+
+
 
 @end
