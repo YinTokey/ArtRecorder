@@ -13,20 +13,8 @@
 		B30E02E11E55EC220009B56E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30E02DF1E55EC220009B56E /* LaunchScreen.storyboard */; };
 		B30E02EC1E55EC220009B56E /* ArtRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B30E02EB1E55EC220009B56E /* ArtRecorderTests.m */; };
 		B30E02F71E55EC220009B56E /* ArtRecorderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B30E02F61E55EC220009B56E /* ArtRecorderUITests.m */; };
-		B3F8BFFD1E5F38D300FE46AA /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EF97E01E5F382D00D1D3E1 /* libGPUImage.a */; };
 		B3F8C0041E5F39D200FE46AA /* FilterArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C0011E5F39D200FE46AA /* FilterArray.m */; };
 		B3F8C0051E5F39D200FE46AA /* FilterChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C0031E5F39D200FE46AA /* FilterChooseView.m */; };
-		B3F8C0291E5FE37100FE46AA /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C0111E5FE37100FE46AA /* CanvasView.m */; };
-		B3F8C02A1E5FE37100FE46AA /* CaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C0141E5FE37100FE46AA /* CaptureManager.m */; };
-		B3F8C02B1E5FE37100FE46AA /* CalculatorTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C0171E5FE37100FE46AA /* CalculatorTools.m */; };
-		B3F8C02C1E5FE37100FE46AA /* IFlyFaceImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C0191E5FE37100FE46AA /* IFlyFaceImage.m */; };
-		B3F8C02D1E5FE37100FE46AA /* UIImage+compress.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C01B1E5FE37100FE46AA /* UIImage+compress.m */; };
-		B3F8C02E1E5FE37100FE46AA /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C01D1E5FE37100FE46AA /* UIImage+Extensions.m */; };
-		B3F8C02F1E5FE37100FE46AA /* PermissionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C0201E5FE37100FE46AA /* PermissionDetector.m */; };
-		B3F8C0301E5FE37100FE46AA /* IFlyFaceResultDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C0231E5FE37100FE46AA /* IFlyFaceResultDetector.m */; };
-		B3F8C0311E5FE37100FE46AA /* IFlyFaceResultKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C0251E5FE37100FE46AA /* IFlyFaceResultKeys.m */; };
-		B3F8C0321E5FE37100FE46AA /* IFlyFaceResultTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C0271E5FE37100FE46AA /* IFlyFaceResultTrack.m */; };
-		B3F8C0351E5FE47A00FE46AA /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F8C0341E5FE47A00FE46AA /* iflyMSC.framework */; };
 		B3F8C0371E5FE4A800FE46AA /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F8C0361E5FE4A800FE46AA /* libz.1.2.8.tbd */; };
 		B3F8C0391E5FE4B400FE46AA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F8C0381E5FE4B400FE46AA /* CoreTelephony.framework */; };
 		B3F8C03B1E5FE4CC00FE46AA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F8C03A1E5FE4CC00FE46AA /* libc++.tbd */; };
@@ -56,27 +44,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = B30E02CD1E55EC220009B56E;
 			remoteInfo = ArtRecorder;
-		};
-		B3EF97DF1E5F382D00D1D3E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3EF97D91E5F382D00D1D3E1 /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
-			remoteInfo = GPUImage;
-		};
-		B3EF97E11E5F382D00D1D3E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3EF97D91E5F382D00D1D3E1 /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCE209E51943F20C002FEED8;
-			remoteInfo = GPUImageFramework;
-		};
-		B3F8BFFE1E5F390100FE46AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3EF97D91E5F382D00D1D3E1 /* GPUImage.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BCF1A33314DDB1EC00852800;
-			remoteInfo = GPUImage;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -109,32 +76,10 @@
 		B30E02F21E55EC220009B56E /* ArtRecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtRecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30E02F61E55EC220009B56E /* ArtRecorderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtRecorderUITests.m; sourceTree = "<group>"; };
 		B30E02F81E55EC220009B56E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3EF97D91E5F382D00D1D3E1 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = ../../../GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
 		B3F8C0001E5F39D200FE46AA /* FilterArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterArray.h; sourceTree = "<group>"; };
 		B3F8C0011E5F39D200FE46AA /* FilterArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterArray.m; sourceTree = "<group>"; };
 		B3F8C0021E5F39D200FE46AA /* FilterChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterChooseView.h; sourceTree = "<group>"; };
 		B3F8C0031E5F39D200FE46AA /* FilterChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterChooseView.m; sourceTree = "<group>"; };
-		B3F8C0101E5FE37100FE46AA /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
-		B3F8C0111E5FE37100FE46AA /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
-		B3F8C0131E5FE37100FE46AA /* CaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureManager.h; sourceTree = "<group>"; };
-		B3F8C0141E5FE37100FE46AA /* CaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureManager.m; sourceTree = "<group>"; };
-		B3F8C0161E5FE37100FE46AA /* CalculatorTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorTools.h; sourceTree = "<group>"; };
-		B3F8C0171E5FE37100FE46AA /* CalculatorTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorTools.m; sourceTree = "<group>"; };
-		B3F8C0181E5FE37100FE46AA /* IFlyFaceImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceImage.h; sourceTree = "<group>"; };
-		B3F8C0191E5FE37100FE46AA /* IFlyFaceImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceImage.m; sourceTree = "<group>"; };
-		B3F8C01A1E5FE37100FE46AA /* UIImage+compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+compress.h"; sourceTree = "<group>"; };
-		B3F8C01B1E5FE37100FE46AA /* UIImage+compress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+compress.m"; sourceTree = "<group>"; };
-		B3F8C01C1E5FE37100FE46AA /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
-		B3F8C01D1E5FE37100FE46AA /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
-		B3F8C01F1E5FE37100FE46AA /* PermissionDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionDetector.h; sourceTree = "<group>"; };
-		B3F8C0201E5FE37100FE46AA /* PermissionDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionDetector.m; sourceTree = "<group>"; };
-		B3F8C0221E5FE37100FE46AA /* IFlyFaceResultDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceResultDetector.h; sourceTree = "<group>"; };
-		B3F8C0231E5FE37100FE46AA /* IFlyFaceResultDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceResultDetector.m; sourceTree = "<group>"; };
-		B3F8C0241E5FE37100FE46AA /* IFlyFaceResultKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceResultKeys.h; sourceTree = "<group>"; };
-		B3F8C0251E5FE37100FE46AA /* IFlyFaceResultKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceResultKeys.m; sourceTree = "<group>"; };
-		B3F8C0261E5FE37100FE46AA /* IFlyFaceResultTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceResultTrack.h; sourceTree = "<group>"; };
-		B3F8C0271E5FE37100FE46AA /* IFlyFaceResultTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceResultTrack.m; sourceTree = "<group>"; };
-		B3F8C0341E5FE47A00FE46AA /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
 		B3F8C0361E5FE4A800FE46AA /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
 		B3F8C0381E5FE4B400FE46AA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B3F8C03A1E5FE4CC00FE46AA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -151,6 +96,7 @@
 		B3FE75801E5DF1CD009CBBDA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		B3FE75821E5DF1DD009CBBDA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B3FE75841E5DF1E5009CBBDA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C94FC0BD1E65B99B00105C9F /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = "../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/Resource/iflyMSC.framework"; sourceTree = "<group>"; };
 		D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArtRecorder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -159,11 +105,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3F8C0351E5FE47A00FE46AA /* iflyMSC.framework in Frameworks */,
 				B3F8C03B1E5FE4CC00FE46AA /* libc++.tbd in Frameworks */,
 				B3F8C0391E5FE4B400FE46AA /* CoreTelephony.framework in Frameworks */,
 				B3F8C0371E5FE4A800FE46AA /* libz.1.2.8.tbd in Frameworks */,
-				B3F8BFFD1E5F38D300FE46AA /* libGPUImage.a in Frameworks */,
 				B3FE75851E5DF1E5009CBBDA /* QuartzCore.framework in Frameworks */,
 				B3FE75831E5DF1DD009CBBDA /* OpenGLES.framework in Frameworks */,
 				B3FE75811E5DF1CD009CBBDA /* CoreMedia.framework in Frameworks */,
@@ -193,6 +137,7 @@
 		0F4D89F9055360453810C532 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C94FC0BD1E65B99B00105C9F /* iflyMSC.framework */,
 				B3F8C03A1E5FE4CC00FE46AA /* libc++.tbd */,
 				B3F8C0381E5FE4B400FE46AA /* CoreTelephony.framework */,
 				B3F8C0361E5FE4A800FE46AA /* libz.1.2.8.tbd */,
@@ -270,14 +215,6 @@
 			path = ArtRecorderUITests;
 			sourceTree = "<group>";
 		};
-		B3E9234E1E5DF8A900CE3B5F /* GPUImage */ = {
-			isa = PBXGroup;
-			children = (
-				B3EF97D91E5F382D00D1D3E1 /* GPUImage.xcodeproj */,
-			);
-			path = GPUImage;
-			sourceTree = "<group>";
-		};
 		B3E924011E5F2C4C00CE3B5F /* Filter */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,96 +226,9 @@
 			path = Filter;
 			sourceTree = "<group>";
 		};
-		B3EF97DA1E5F382D00D1D3E1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B3EF97E01E5F382D00D1D3E1 /* libGPUImage.a */,
-				B3EF97E21E5F382D00D1D3E1 /* GPUImage.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B3F8C00D1E5FE37100FE46AA /* FaceRecognition */ = {
-			isa = PBXGroup;
-			children = (
-				B3F8C00E1E5FE37100FE46AA /* tools */,
-			);
-			path = FaceRecognition;
-			sourceTree = "<group>";
-		};
-		B3F8C00E1E5FE37100FE46AA /* tools */ = {
-			isa = PBXGroup;
-			children = (
-				B3F8C00F1E5FE37100FE46AA /* CanvasView */,
-				B3F8C0121E5FE37100FE46AA /* Capture */,
-				B3F8C0151E5FE37100FE46AA /* Image */,
-				B3F8C01E1E5FE37100FE46AA /* Permission */,
-				B3F8C0211E5FE37100FE46AA /* Result */,
-			);
-			path = tools;
-			sourceTree = "<group>";
-		};
-		B3F8C00F1E5FE37100FE46AA /* CanvasView */ = {
-			isa = PBXGroup;
-			children = (
-				B3F8C0101E5FE37100FE46AA /* CanvasView.h */,
-				B3F8C0111E5FE37100FE46AA /* CanvasView.m */,
-			);
-			path = CanvasView;
-			sourceTree = "<group>";
-		};
-		B3F8C0121E5FE37100FE46AA /* Capture */ = {
-			isa = PBXGroup;
-			children = (
-				B3F8C0131E5FE37100FE46AA /* CaptureManager.h */,
-				B3F8C0141E5FE37100FE46AA /* CaptureManager.m */,
-			);
-			path = Capture;
-			sourceTree = "<group>";
-		};
-		B3F8C0151E5FE37100FE46AA /* Image */ = {
-			isa = PBXGroup;
-			children = (
-				B3F8C0161E5FE37100FE46AA /* CalculatorTools.h */,
-				B3F8C0171E5FE37100FE46AA /* CalculatorTools.m */,
-				B3F8C0181E5FE37100FE46AA /* IFlyFaceImage.h */,
-				B3F8C0191E5FE37100FE46AA /* IFlyFaceImage.m */,
-				B3F8C01A1E5FE37100FE46AA /* UIImage+compress.h */,
-				B3F8C01B1E5FE37100FE46AA /* UIImage+compress.m */,
-				B3F8C01C1E5FE37100FE46AA /* UIImage+Extensions.h */,
-				B3F8C01D1E5FE37100FE46AA /* UIImage+Extensions.m */,
-			);
-			path = Image;
-			sourceTree = "<group>";
-		};
-		B3F8C01E1E5FE37100FE46AA /* Permission */ = {
-			isa = PBXGroup;
-			children = (
-				B3F8C01F1E5FE37100FE46AA /* PermissionDetector.h */,
-				B3F8C0201E5FE37100FE46AA /* PermissionDetector.m */,
-			);
-			path = Permission;
-			sourceTree = "<group>";
-		};
-		B3F8C0211E5FE37100FE46AA /* Result */ = {
-			isa = PBXGroup;
-			children = (
-				B3F8C0221E5FE37100FE46AA /* IFlyFaceResultDetector.h */,
-				B3F8C0231E5FE37100FE46AA /* IFlyFaceResultDetector.m */,
-				B3F8C0241E5FE37100FE46AA /* IFlyFaceResultKeys.h */,
-				B3F8C0251E5FE37100FE46AA /* IFlyFaceResultKeys.m */,
-				B3F8C0261E5FE37100FE46AA /* IFlyFaceResultTrack.h */,
-				B3F8C0271E5FE37100FE46AA /* IFlyFaceResultTrack.m */,
-			);
-			path = Result;
-			sourceTree = "<group>";
-		};
 		B3FE74D41E57548C009CBBDA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				B3F8C0341E5FE47A00FE46AA /* iflyMSC.framework */,
-				B3F8C00D1E5FE37100FE46AA /* FaceRecognition */,
-				B3E9234E1E5DF8A900CE3B5F /* GPUImage */,
 			);
 			name = Resource;
 			path = "../../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/Resource";
@@ -555,7 +405,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				B3F8BFFF1E5F390100FE46AA /* PBXTargetDependency */,
 			);
 			name = ArtRecorder;
 			productName = ArtRecorder;
@@ -637,12 +486,6 @@
 			mainGroup = B30E02C51E55EC220009B56E;
 			productRefGroup = B30E02CF1E55EC220009B56E /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = B3EF97DA1E5F382D00D1D3E1 /* Products */;
-					ProjectRef = B3EF97D91E5F382D00D1D3E1 /* GPUImage.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				B30E02CD1E55EC220009B56E /* ArtRecorder */,
@@ -651,23 +494,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		B3EF97E01E5F382D00D1D3E1 /* libGPUImage.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libGPUImage.a;
-			remoteRef = B3EF97DF1E5F382D00D1D3E1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B3EF97E21E5F382D00D1D3E1 /* GPUImage.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GPUImage.framework;
-			remoteRef = B3EF97E11E5F382D00D1D3E1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B30E02CC1E55EC220009B56E /* Resources */ = {
@@ -752,19 +578,9 @@
 				B3FE74F31E598916009CBBDA /* RecorderViewController.m in Sources */,
 				B3FE74EF1E58CC66009CBBDA /* VideoViewController.m in Sources */,
 				B30E02D61E55EC220009B56E /* AppDelegate.m in Sources */,
-				B3F8C02E1E5FE37100FE46AA /* UIImage+Extensions.m in Sources */,
 				B3F8C0041E5F39D200FE46AA /* FilterArray.m in Sources */,
 				B3F8C0051E5F39D200FE46AA /* FilterChooseView.m in Sources */,
 				B30E02D31E55EC220009B56E /* main.m in Sources */,
-				B3F8C02A1E5FE37100FE46AA /* CaptureManager.m in Sources */,
-				B3F8C02F1E5FE37100FE46AA /* PermissionDetector.m in Sources */,
-				B3F8C02B1E5FE37100FE46AA /* CalculatorTools.m in Sources */,
-				B3F8C02C1E5FE37100FE46AA /* IFlyFaceImage.m in Sources */,
-				B3F8C0301E5FE37100FE46AA /* IFlyFaceResultDetector.m in Sources */,
-				B3F8C02D1E5FE37100FE46AA /* UIImage+compress.m in Sources */,
-				B3F8C0311E5FE37100FE46AA /* IFlyFaceResultKeys.m in Sources */,
-				B3F8C0321E5FE37100FE46AA /* IFlyFaceResultTrack.m in Sources */,
-				B3F8C0291E5FE37100FE46AA /* CanvasView.m in Sources */,
 				B3FE74E81E58C1D3009CBBDA /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -797,11 +613,6 @@
 			isa = PBXTargetDependency;
 			target = B30E02CD1E55EC220009B56E /* ArtRecorder */;
 			targetProxy = B30E02F31E55EC220009B56E /* PBXContainerItemProxy */;
-		};
-		B3F8BFFF1E5F390100FE46AA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GPUImage;
-			targetProxy = B3F8BFFE1E5F390100FE46AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
