@@ -13,10 +13,20 @@
 		B30E02E11E55EC220009B56E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30E02DF1E55EC220009B56E /* LaunchScreen.storyboard */; };
 		B30E02EC1E55EC220009B56E /* ArtRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B30E02EB1E55EC220009B56E /* ArtRecorderTests.m */; };
 		B30E02F71E55EC220009B56E /* ArtRecorderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B30E02F61E55EC220009B56E /* ArtRecorderUITests.m */; };
+		B3F8C0041E5F39D200FE46AA /* FilterArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C0011E5F39D200FE46AA /* FilterArray.m */; };
+		B3F8C0051E5F39D200FE46AA /* FilterChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F8C0031E5F39D200FE46AA /* FilterChooseView.m */; };
+		B3F8C0371E5FE4A800FE46AA /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F8C0361E5FE4A800FE46AA /* libz.1.2.8.tbd */; };
+		B3F8C0391E5FE4B400FE46AA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F8C0381E5FE4B400FE46AA /* CoreTelephony.framework */; };
+		B3F8C03B1E5FE4CC00FE46AA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F8C03A1E5FE4CC00FE46AA /* libc++.tbd */; };
 		B3FE74E81E58C1D3009CBBDA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE74E71E58C1D3009CBBDA /* HomeViewController.m */; };
 		B3FE74EF1E58CC66009CBBDA /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE74EE1E58CC66009CBBDA /* VideoViewController.m */; };
 		B3FE74F31E598916009CBBDA /* RecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FE74F11E598916009CBBDA /* RecorderViewController.m */; };
 		B3FE74F41E598916009CBBDA /* RecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3FE74F21E598916009CBBDA /* RecorderViewController.xib */; };
+		B3FE757D1E5DF1A9009CBBDA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE757C1E5DF1A9009CBBDA /* AVFoundation.framework */; };
+		B3FE757F1E5DF1B5009CBBDA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE757E1E5DF1B5009CBBDA /* CoreVideo.framework */; };
+		B3FE75811E5DF1CD009CBBDA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE75801E5DF1CD009CBBDA /* CoreMedia.framework */; };
+		B3FE75831E5DF1DD009CBBDA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE75821E5DF1DD009CBBDA /* OpenGLES.framework */; };
+		B3FE75851E5DF1E5009CBBDA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE75841E5DF1E5009CBBDA /* QuartzCore.framework */; };
 		EE3B50300BD5E1948DCF74A0 /* libPods-ArtRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +47,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B3FE75941E5DF3F3009CBBDA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5D17F1E35FF468B41456AED5 /* Pods-ArtRecorder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtRecorder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArtRecorder/Pods-ArtRecorder.debug.xcconfig"; sourceTree = "<group>"; };
 		72A6B44E05EE798B3282F4C1 /* Pods-ArtRecorder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtRecorder.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArtRecorder/Pods-ArtRecorder.release.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +76,13 @@
 		B30E02F21E55EC220009B56E /* ArtRecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtRecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30E02F61E55EC220009B56E /* ArtRecorderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtRecorderUITests.m; sourceTree = "<group>"; };
 		B30E02F81E55EC220009B56E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3F8C0001E5F39D200FE46AA /* FilterArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterArray.h; sourceTree = "<group>"; };
+		B3F8C0011E5F39D200FE46AA /* FilterArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterArray.m; sourceTree = "<group>"; };
+		B3F8C0021E5F39D200FE46AA /* FilterChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterChooseView.h; sourceTree = "<group>"; };
+		B3F8C0031E5F39D200FE46AA /* FilterChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterChooseView.m; sourceTree = "<group>"; };
+		B3F8C0361E5FE4A800FE46AA /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
+		B3F8C0381E5FE4B400FE46AA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B3F8C03A1E5FE4CC00FE46AA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		B3FE74E61E58C1D3009CBBDA /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		B3FE74E71E58C1D3009CBBDA /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		B3FE74E91E58C248009CBBDA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = "../../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/PrefixHeader.pch"; sourceTree = "<group>"; };
@@ -61,6 +91,12 @@
 		B3FE74F01E598916009CBBDA /* RecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderViewController.h; sourceTree = "<group>"; };
 		B3FE74F11E598916009CBBDA /* RecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecorderViewController.m; sourceTree = "<group>"; };
 		B3FE74F21E598916009CBBDA /* RecorderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecorderViewController.xib; sourceTree = "<group>"; };
+		B3FE757C1E5DF1A9009CBBDA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B3FE757E1E5DF1B5009CBBDA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B3FE75801E5DF1CD009CBBDA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B3FE75821E5DF1DD009CBBDA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B3FE75841E5DF1E5009CBBDA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C94FC0BD1E65B99B00105C9F /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = "../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/Resource/iflyMSC.framework"; sourceTree = "<group>"; };
 		D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArtRecorder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,6 +105,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F8C03B1E5FE4CC00FE46AA /* libc++.tbd in Frameworks */,
+				B3F8C0391E5FE4B400FE46AA /* CoreTelephony.framework in Frameworks */,
+				B3F8C0371E5FE4A800FE46AA /* libz.1.2.8.tbd in Frameworks */,
+				B3FE75851E5DF1E5009CBBDA /* QuartzCore.framework in Frameworks */,
+				B3FE75831E5DF1DD009CBBDA /* OpenGLES.framework in Frameworks */,
+				B3FE75811E5DF1CD009CBBDA /* CoreMedia.framework in Frameworks */,
+				B3FE757F1E5DF1B5009CBBDA /* CoreVideo.framework in Frameworks */,
+				B3FE757D1E5DF1A9009CBBDA /* AVFoundation.framework in Frameworks */,
 				EE3B50300BD5E1948DCF74A0 /* libPods-ArtRecorder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +137,15 @@
 		0F4D89F9055360453810C532 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C94FC0BD1E65B99B00105C9F /* iflyMSC.framework */,
+				B3F8C03A1E5FE4CC00FE46AA /* libc++.tbd */,
+				B3F8C0381E5FE4B400FE46AA /* CoreTelephony.framework */,
+				B3F8C0361E5FE4A800FE46AA /* libz.1.2.8.tbd */,
+				B3FE75841E5DF1E5009CBBDA /* QuartzCore.framework */,
+				B3FE75821E5DF1DD009CBBDA /* OpenGLES.framework */,
+				B3FE75801E5DF1CD009CBBDA /* CoreMedia.framework */,
+				B3FE757E1E5DF1B5009CBBDA /* CoreVideo.framework */,
+				B3FE757C1E5DF1A9009CBBDA /* AVFoundation.framework */,
 				D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */,
 			);
 			name = Frameworks;
@@ -162,6 +215,17 @@
 			path = ArtRecorderUITests;
 			sourceTree = "<group>";
 		};
+		B3E924011E5F2C4C00CE3B5F /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				B3F8C0001E5F39D200FE46AA /* FilterArray.h */,
+				B3F8C0011E5F39D200FE46AA /* FilterArray.m */,
+				B3F8C0021E5F39D200FE46AA /* FilterChooseView.h */,
+				B3F8C0031E5F39D200FE46AA /* FilterChooseView.m */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
 		B3FE74D41E57548C009CBBDA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +286,7 @@
 		B3FE74DA1E57548C009CBBDA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B3E924011E5F2C4C00CE3B5F /* Filter */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,6 +400,7 @@
 				B30E02CC1E55EC220009B56E /* Resources */,
 				08DF6CA3C58314A10DF9AD3F /* [CP] Embed Pods Frameworks */,
 				29214EF93A8C1CBADBECB8D5 /* [CP] Copy Pods Resources */,
+				B3FE75941E5DF3F3009CBBDA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -512,6 +578,8 @@
 				B3FE74F31E598916009CBBDA /* RecorderViewController.m in Sources */,
 				B3FE74EF1E58CC66009CBBDA /* VideoViewController.m in Sources */,
 				B30E02D61E55EC220009B56E /* AppDelegate.m in Sources */,
+				B3F8C0041E5F39D200FE46AA /* FilterArray.m in Sources */,
+				B3F8C0051E5F39D200FE46AA /* FilterChooseView.m in Sources */,
 				B30E02D31E55EC220009B56E /* main.m in Sources */,
 				B3FE74E81E58C1D3009CBBDA /* HomeViewController.m in Sources */,
 			);
@@ -656,8 +724,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6YFDY973XZ;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../lib";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ArtRecorder/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = ArtRecorder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YinjianChen.ArtRecorder;
@@ -671,8 +741,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6YFDY973XZ;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../lib";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ArtRecorder/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = ArtRecorder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YinjianChen.ArtRecorder;

@@ -20,7 +20,7 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <Masonry.h>
 #import <SCRecorder/SCRecorder.h>
-
+#import "GPUImage.h"
 
 
 #endif /* PrefixHeader_pch */
