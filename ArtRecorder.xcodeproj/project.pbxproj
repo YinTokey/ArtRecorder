@@ -27,6 +27,7 @@
 		B3FE75811E5DF1CD009CBBDA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE75801E5DF1CD009CBBDA /* CoreMedia.framework */; };
 		B3FE75831E5DF1DD009CBBDA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE75821E5DF1DD009CBBDA /* OpenGLES.framework */; };
 		B3FE75851E5DF1E5009CBBDA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE75841E5DF1E5009CBBDA /* QuartzCore.framework */; };
+		C94FC0C71E65D36600105C9F /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0C61E65D36600105C9F /* iflyMSC.framework */; };
 		EE3B50300BD5E1948DCF74A0 /* libPods-ArtRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */; };
 /* End PBXBuildFile section */
 
@@ -96,7 +97,7 @@
 		B3FE75801E5DF1CD009CBBDA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		B3FE75821E5DF1DD009CBBDA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B3FE75841E5DF1E5009CBBDA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		C94FC0BD1E65B99B00105C9F /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = "../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/Resource/iflyMSC.framework"; sourceTree = "<group>"; };
+		C94FC0C61E65D36600105C9F /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = "../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/iflyMSC.framework"; sourceTree = "<group>"; };
 		D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArtRecorder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -105,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C94FC0C71E65D36600105C9F /* iflyMSC.framework in Frameworks */,
 				B3F8C03B1E5FE4CC00FE46AA /* libc++.tbd in Frameworks */,
 				B3F8C0391E5FE4B400FE46AA /* CoreTelephony.framework in Frameworks */,
 				B3F8C0371E5FE4A800FE46AA /* libz.1.2.8.tbd in Frameworks */,
@@ -137,7 +139,7 @@
 		0F4D89F9055360453810C532 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C94FC0BD1E65B99B00105C9F /* iflyMSC.framework */,
+				C94FC0C61E65D36600105C9F /* iflyMSC.framework */,
 				B3F8C03A1E5FE4CC00FE46AA /* libc++.tbd */,
 				B3F8C0381E5FE4B400FE46AA /* CoreTelephony.framework */,
 				B3F8C0361E5FE4A800FE46AA /* libz.1.2.8.tbd */,
@@ -176,7 +178,6 @@
 		B30E02D01E55EC220009B56E /* ArtRecorder */ = {
 			isa = PBXGroup;
 			children = (
-				B3FE74D41E57548C009CBBDA /* Resource */,
 				B3FE74D51E57548C009CBBDA /* Sections */,
 				B30E02D41E55EC220009B56E /* AppDelegate.h */,
 				B30E02D51E55EC220009B56E /* AppDelegate.m */,
@@ -224,14 +225,6 @@
 				B3F8C0031E5F39D200FE46AA /* FilterChooseView.m */,
 			);
 			path = Filter;
-			sourceTree = "<group>";
-		};
-		B3FE74D41E57548C009CBBDA /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resource;
-			path = "../../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/Resource";
 			sourceTree = "<group>";
 		};
 		B3FE74D51E57548C009CBBDA /* Sections */ = {
@@ -724,7 +717,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6YFDY973XZ;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../lib";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ArtRecorder/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
@@ -741,7 +738,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6YFDY973XZ;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../lib";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ArtRecorder/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
