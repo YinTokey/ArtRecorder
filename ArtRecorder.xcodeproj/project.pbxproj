@@ -28,6 +28,14 @@
 		B3FE75831E5DF1DD009CBBDA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE75821E5DF1DD009CBBDA /* OpenGLES.framework */; };
 		B3FE75851E5DF1E5009CBBDA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE75841E5DF1E5009CBBDA /* QuartzCore.framework */; };
 		C94FC0C71E65D36600105C9F /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0C61E65D36600105C9F /* iflyMSC.framework */; };
+		C94FC0C91E65D71800105C9F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0C81E65D71800105C9F /* AddressBook.framework */; };
+		C94FC0CB1E65D7D600105C9F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0CA1E65D7D600105C9F /* GLKit.framework */; };
+		C94FC0CD1E65D7E100105C9F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0CC1E65D7E100105C9F /* AssetsLibrary.framework */; };
+		C94FC0CF1E65D80D00105C9F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0CE1E65D80D00105C9F /* MobileCoreServices.framework */; };
+		C94FC0D11E65D83000105C9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0D01E65D83000105C9F /* CoreGraphics.framework */; };
+		C94FC0D31E65D88200105C9F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0D21E65D88200105C9F /* AudioToolbox.framework */; };
+		C94FC0D51E65D89600105C9F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0D41E65D89600105C9F /* CoreMotion.framework */; };
+		C94FC0D71E65D8E800105C9F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0D61E65D8E800105C9F /* SystemConfiguration.framework */; };
 		EE3B50300BD5E1948DCF74A0 /* libPods-ArtRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +106,14 @@
 		B3FE75821E5DF1DD009CBBDA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B3FE75841E5DF1E5009CBBDA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C94FC0C61E65D36600105C9F /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = "../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/iflyMSC.framework"; sourceTree = "<group>"; };
+		C94FC0C81E65D71800105C9F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C94FC0CA1E65D7D600105C9F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C94FC0CC1E65D7E100105C9F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		C94FC0CE1E65D80D00105C9F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C94FC0D01E65D83000105C9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C94FC0D21E65D88200105C9F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C94FC0D41E65D89600105C9F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		C94FC0D61E65D8E800105C9F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArtRecorder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,6 +122,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C94FC0D71E65D8E800105C9F /* SystemConfiguration.framework in Frameworks */,
+				C94FC0D51E65D89600105C9F /* CoreMotion.framework in Frameworks */,
+				C94FC0D31E65D88200105C9F /* AudioToolbox.framework in Frameworks */,
+				C94FC0D11E65D83000105C9F /* CoreGraphics.framework in Frameworks */,
+				C94FC0CF1E65D80D00105C9F /* MobileCoreServices.framework in Frameworks */,
+				C94FC0CD1E65D7E100105C9F /* AssetsLibrary.framework in Frameworks */,
+				C94FC0CB1E65D7D600105C9F /* GLKit.framework in Frameworks */,
+				C94FC0C91E65D71800105C9F /* AddressBook.framework in Frameworks */,
 				C94FC0C71E65D36600105C9F /* iflyMSC.framework in Frameworks */,
 				B3F8C03B1E5FE4CC00FE46AA /* libc++.tbd in Frameworks */,
 				B3F8C0391E5FE4B400FE46AA /* CoreTelephony.framework in Frameworks */,
@@ -139,6 +163,14 @@
 		0F4D89F9055360453810C532 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C94FC0D61E65D8E800105C9F /* SystemConfiguration.framework */,
+				C94FC0D41E65D89600105C9F /* CoreMotion.framework */,
+				C94FC0D21E65D88200105C9F /* AudioToolbox.framework */,
+				C94FC0D01E65D83000105C9F /* CoreGraphics.framework */,
+				C94FC0CE1E65D80D00105C9F /* MobileCoreServices.framework */,
+				C94FC0CC1E65D7E100105C9F /* AssetsLibrary.framework */,
+				C94FC0CA1E65D7D600105C9F /* GLKit.framework */,
+				C94FC0C81E65D71800105C9F /* AddressBook.framework */,
 				C94FC0C61E65D36600105C9F /* iflyMSC.framework */,
 				B3F8C03A1E5FE4CC00FE46AA /* libc++.tbd */,
 				B3F8C0381E5FE4B400FE46AA /* CoreTelephony.framework */,
