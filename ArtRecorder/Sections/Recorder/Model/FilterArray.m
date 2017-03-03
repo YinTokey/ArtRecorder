@@ -22,7 +22,7 @@
     
     UIImage *image1 = [UIImage imageWithContentsOfFile:filePath1];
     
-    NSDictionary * dic1 = [NSDictionary dictionaryWithObjectsAndKeys:Filter1,@"filter",title1,@"name",image1,"image", nil];
+    NSDictionary * dic1 = [NSDictionary dictionaryWithObjectsAndKeys:Filter1,@"filter",title1,@"name",image1,@"image", nil];
     [arr addObject:dic1];
     
     GPUImageOutput<GPUImageInput> * Filter2 = [[GPUImageWhiteBalanceFilter alloc] init];
@@ -35,7 +35,7 @@
                            ];
     
     UIImage *image2 = [UIImage imageWithContentsOfFile:filePath2];
-    NSDictionary * dic2 = [NSDictionary dictionaryWithObjectsAndKeys:Filter2,@"filter",title2,@"name",image2,"image", nil];
+    NSDictionary * dic2 = [NSDictionary dictionaryWithObjectsAndKeys:Filter2,@"filter",title2,@"name",image2,@"image", nil];
     [arr addObject:dic2];
     
     
@@ -46,7 +46,7 @@
                            ];
     
     UIImage *image3 = [UIImage imageWithContentsOfFile:filePath3];
-    NSDictionary * dic3 = [NSDictionary dictionaryWithObjectsAndKeys:Filter3,@"filter",title3,@"name",image3,"image", nil];
+    NSDictionary * dic3 = [NSDictionary dictionaryWithObjectsAndKeys:Filter3,@"filter",title3,@"name",image3,@"image", nil];
     [arr addObject:dic3];
     
     GPUImageOutput<GPUImageInput> * Filter4 = [[GPUImageGrayscaleFilter alloc] init];
@@ -57,18 +57,18 @@
     
     UIImage *image4 = [UIImage imageWithContentsOfFile:filePath4];
     
-    NSDictionary * dic4 = [NSDictionary dictionaryWithObjectsAndKeys:Filter4,@"filter",title4,@"name",image4,"image", nil];
+    NSDictionary * dic4 = [NSDictionary dictionaryWithObjectsAndKeys:Filter4,@"filter",title4,@"name",image4,@"image", nil];
     [arr addObject:dic4];
     
     GPUImageOutput<GPUImageInput> * Filter5 = [[GPUImageSketchFilter alloc] init];
     NSString * title5 = @"素描";
     NSString *filePath5 = [[NSBundle mainBundle] pathForResource:
-                           @"filter_2" ofType:@"png"
+                           @"filter_5" ofType:@"png"
                            ];
     
     UIImage *image5 = [UIImage imageWithContentsOfFile:filePath5];
     
-    NSDictionary * dic5 = [NSDictionary dictionaryWithObjectsAndKeys:Filter5,@"filter",title5,@"name",image5,"image", nil];
+    NSDictionary * dic5 = [NSDictionary dictionaryWithObjectsAndKeys:Filter5,@"filter",title5,@"name",image5,@"image", nil];
     [arr addObject:dic5];
 
     

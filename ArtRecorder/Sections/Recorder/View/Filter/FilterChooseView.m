@@ -33,7 +33,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     FilterChooseCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellid" forIndexPath:indexPath];
     cell.nameLab.text = [_filterArr[indexPath.row] objectForKey:@"name"];
-    
+    cell.iconImg.image = [_filterArr[indexPath.row] objectForKey:@"image"];
     return cell;
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -97,7 +97,7 @@
         _nameLab.textColor = [UIColor whiteColor];
         _nameLab.textAlignment = NSTextAlignmentCenter;
         _nameLab.font = [UIFont systemFontOfSize:14];
-        [self.contentView addSubview:_nameLab];
+        //[self.contentView addSubview:_nameLab];
     }
     return self;
 }
