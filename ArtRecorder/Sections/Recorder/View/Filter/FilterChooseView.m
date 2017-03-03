@@ -32,8 +32,8 @@
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     FilterChooseCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellid" forIndexPath:indexPath];
-//    NSLog(@"%ld",(long)indexPath.row);
     cell.nameLab.text = [_filterArr[indexPath.row] objectForKey:@"name"];
+    
     return cell;
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -42,8 +42,7 @@
         GPUImageOutput<GPUImageInput> * pixellateFilter = (GPUImageOutput<GPUImageInput> *)[_filterArr[indexPath.row] objectForKey:@"filter"];
         _backback(pixellateFilter);
     }
-//    [collectionView reloadItemsAtIndexPaths:@[indexPath]];
-//    NSLog(@"dian");
+
 }
 -(UICollectionView *)collectionview
 {
@@ -87,7 +86,7 @@
         self.backgroundColor = [UIColor clearColor];
         _iconImg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
         _iconImg.clipsToBounds = YES;
-        _iconImg.backgroundColor = [UIColor redColor];
+        _iconImg.backgroundColor = [UIColor yellowColor];
         _iconImg.layer.cornerRadius = 40;
         _iconImg.layer.masksToBounds = YES;
         [self.contentView addSubview:_iconImg];
