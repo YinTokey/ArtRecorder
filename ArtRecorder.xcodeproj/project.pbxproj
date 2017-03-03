@@ -26,6 +26,12 @@
 		B3FE75811E5DF1CD009CBBDA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE75801E5DF1CD009CBBDA /* CoreMedia.framework */; };
 		B3FE75831E5DF1DD009CBBDA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE75821E5DF1DD009CBBDA /* OpenGLES.framework */; };
 		B3FE75851E5DF1E5009CBBDA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE75841E5DF1E5009CBBDA /* QuartzCore.framework */; };
+		C9077BC61E69C762009D4615 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9077BC01E69C762009D4615 /* 1.jpg */; };
+		C9077BC71E69C762009D4615 /* filter_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C9077BC11E69C762009D4615 /* filter_1.png */; };
+		C9077BC81E69C762009D4615 /* filter_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C9077BC21E69C762009D4615 /* filter_2.png */; };
+		C9077BC91E69C762009D4615 /* filter_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C9077BC31E69C762009D4615 /* filter_3.png */; };
+		C9077BCA1E69C762009D4615 /* filter_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C9077BC41E69C762009D4615 /* filter_4.png */; };
+		C9077BCB1E69C762009D4615 /* filter_5.png in Resources */ = {isa = PBXBuildFile; fileRef = C9077BC51E69C762009D4615 /* filter_5.png */; };
 		C94FC0C71E65D36600105C9F /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0C61E65D36600105C9F /* iflyMSC.framework */; };
 		C94FC0C91E65D71800105C9F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0C81E65D71800105C9F /* AddressBook.framework */; };
 		C94FC0CB1E65D7D600105C9F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0CA1E65D7D600105C9F /* GLKit.framework */; };
@@ -103,6 +109,12 @@
 		B3FE75801E5DF1CD009CBBDA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		B3FE75821E5DF1DD009CBBDA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B3FE75841E5DF1E5009CBBDA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C9077BC01E69C762009D4615 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		C9077BC11E69C762009D4615 /* filter_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter_1.png; sourceTree = "<group>"; };
+		C9077BC21E69C762009D4615 /* filter_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter_2.png; sourceTree = "<group>"; };
+		C9077BC31E69C762009D4615 /* filter_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter_3.png; sourceTree = "<group>"; };
+		C9077BC41E69C762009D4615 /* filter_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter_4.png; sourceTree = "<group>"; };
+		C9077BC51E69C762009D4615 /* filter_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter_5.png; sourceTree = "<group>"; };
 		C94FC0C61E65D36600105C9F /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = "../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/iflyMSC.framework"; sourceTree = "<group>"; };
 		C94FC0C81E65D71800105C9F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C94FC0CA1E65D7D600105C9F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -210,6 +222,7 @@
 		B30E02D01E55EC220009B56E /* ArtRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				C9077BBC1E69C1F8009D4615 /* Sources */,
 				B3FE74D51E57548C009CBBDA /* Sections */,
 				B30E02D41E55EC220009B56E /* AppDelegate.h */,
 				B30E02D51E55EC220009B56E /* AppDelegate.m */,
@@ -412,6 +425,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C9077BBC1E69C1F8009D4615 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C9077BBF1E69C762009D4615 /* images */,
+			);
+			name = Sources;
+			path = "../../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/Sources";
+			sourceTree = "<group>";
+		};
+		C9077BBF1E69C762009D4615 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C9077BC01E69C762009D4615 /* 1.jpg */,
+				C9077BC11E69C762009D4615 /* filter_1.png */,
+				C9077BC21E69C762009D4615 /* filter_2.png */,
+				C9077BC31E69C762009D4615 /* filter_3.png */,
+				C9077BC41E69C762009D4615 /* filter_4.png */,
+				C9077BC51E69C762009D4615 /* filter_5.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -525,7 +560,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9077BCA1E69C762009D4615 /* filter_4.png in Resources */,
+				C9077BC81E69C762009D4615 /* filter_2.png in Resources */,
 				B3FE74F41E598916009CBBDA /* RecorderViewController.xib in Resources */,
+				C9077BCB1E69C762009D4615 /* filter_5.png in Resources */,
+				C9077BC91E69C762009D4615 /* filter_3.png in Resources */,
+				C9077BC71E69C762009D4615 /* filter_1.png in Resources */,
+				C9077BC61E69C762009D4615 /* 1.jpg in Resources */,
 				B30E02E11E55EC220009B56E /* LaunchScreen.storyboard in Resources */,
 				B30E02DE1E55EC220009B56E /* Assets.xcassets in Resources */,
 			);
