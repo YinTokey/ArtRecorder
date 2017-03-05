@@ -15,7 +15,7 @@
 @property (nonatomic,retain) GPUImageMovieWriter *writer;
 @property (nonatomic,retain) GPUImageOutput<GPUImageInput> *filter;
 @property (nonatomic,retain) FilterChooseView * chooseView;
-
+@property (nonatomic,strong) NSTimer *timer;
 
 // Switching between front and back cameras
 @end
@@ -57,6 +57,10 @@
     };
     [self.view addSubview:_chooseView];
     _chooseView.hidden = YES;
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(startTimer) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
+
 }
 
 - (void)setupBtns{
@@ -76,8 +80,6 @@
         
     }];
     
-    [self.startBtn setTitle:@"start" forState:UIControlStateNormal];
-    [self.startBtn setTitle:@"stop" forState:UIControlStateSelected];
     [[self.startBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
         
         [self start_stop];
@@ -114,6 +116,9 @@
         [self.writer finishRecording];
         UIAlertView * alertview = [[UIAlertView alloc] initWithTitle:@"是否保存到相册" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"保存", nil];
         [alertview show];
+        
+        [_timer invalidate];
+        
     }else{
         NSString *fileName = [@"Documents/" stringByAppendingFormat:@"Movie%d.m4v",(int)[[NSDate date] timeIntervalSince1970]];
         pathToMovie = [NSHomeDirectory() stringByAppendingPathComponent:fileName];
@@ -124,6 +129,7 @@
         self.camera.audioEncodingTarget = self.writer;
         [self.writer startRecording];
         
+        [_timer fire];
     }
 }
 
@@ -155,6 +161,18 @@
     
 }
 
-
+-(void)startTimer{
+    
+    NSInteger second;
+    NSInteger minus;
+    
+    second++;
+    if (second == 60) {
+        minus++;
+        second = 0;
+    }
+    //_timeLabel.text = [NSString stringWithFormat:@"%ld:%ld",minus,second];
+    
+}
 
 @end
