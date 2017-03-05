@@ -57,11 +57,11 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <state key="normal" image="face.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ni5-yn-GLV">
-                    <rect key="frame" x="270" y="11" width="50" height="50"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ni5-yn-GLV">
+                    <rect key="frame" x="283" y="22" width="24" height="28"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.87912326389999995" green="0.84442816840000001" blue="0.30280131100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="关闭"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="close.png"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTs-Vv-O4S">
                     <rect key="frame" x="37" y="21" width="36" height="31"/>
@@ -79,6 +79,7 @@
         <image name="Star.png" width="33" height="31"/>
         <image name="Triangle.png" width="43" height="43"/>
         <image name="camera.png" width="32" height="32"/>
+        <image name="close.png" width="23" height="24"/>
         <image name="face.png" width="25" height="25"/>
         <image name="switch.png" width="26" height="24"/>
     </resources>
