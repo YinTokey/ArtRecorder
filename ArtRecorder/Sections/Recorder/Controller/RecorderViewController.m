@@ -16,6 +16,7 @@
 @property (nonatomic,retain) GPUImageOutput<GPUImageInput> *filter;
 @property (nonatomic,retain) FilterChooseView * chooseView;
 @property (nonatomic,strong) NSTimer *timer;
+@property (nonatomic, assign) int count;
 
 // Switching between front and back cameras
 @end
@@ -58,8 +59,6 @@
     [self.view addSubview:_chooseView];
     _chooseView.hidden = YES;
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(startTimer) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
 
 }
 
@@ -117,7 +116,13 @@
         UIAlertView * alertview = [[UIAlertView alloc] initWithTitle:@"是否保存到相册" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"保存", nil];
         [alertview show];
         
-        [_timer invalidate];
+        //停止计时器
+        if (self.timer) {
+            [self.timer invalidate];
+            self.timer = nil;
+        }
+        self.count = 0;
+        self.timeLabel.text = @"00:00";
         
     }else{
         NSString *fileName = [@"Documents/" stringByAppendingFormat:@"Movie%d.m4v",(int)[[NSDate date] timeIntervalSince1970]];
@@ -128,8 +133,14 @@
         [self.filter addTarget:self.writer];
         self.camera.audioEncodingTarget = self.writer;
         [self.writer startRecording];
+        //开始计时器
+        if (self.timer) {
+            [self.timer invalidate];
+            self.timer = nil;
+        }
+        self.count = 0;
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(repeatShowTime:) userInfo:@"admin" repeats:YES];
         
-        [_timer fire];
     }
 }
 
@@ -161,18 +172,18 @@
     
 }
 
--(void)startTimer{
+- (void)repeatShowTime:(NSTimer *)tempTimer {
     
-    NSInteger second;
-    NSInteger minus;
+    self.count++;
     
-    second++;
-    if (second == 60) {
-        minus++;
-        second = 0;
+    self.timeLabel.text = [NSString stringWithFormat:@"%02d:%02d",self.count/60,self.count%60];
+}
+
+- (void)dealloc {   //销毁NSTimer
+    if (self.timer) {
+        [self.timer invalidate];
+        self.timer = nil;
     }
-    //_timeLabel.text = [NSString stringWithFormat:@"%ld:%ld",minus,second];
-    
 }
 
 @end
