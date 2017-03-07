@@ -87,7 +87,7 @@
     
     [[self.switchBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
         
-        
+        [_camera rotateCamera];
     }];
 
 }
