@@ -8,22 +8,6 @@
 
 #import "RecorderViewController.h"
 #import "FilterChooseView.h"
-#import "IFlyFaceImage.h"
-#import "iflyMSC/IFlyFaceSDK.h"
-#import <AVFoundation/AVFoundation.h>
-#import <AssetsLibrary/AssetsLibrary.h>
-#import <QuartzCore/QuartzCore.h>
-#import "PermissionDetector.h"
-#import "UIImage+Extensions.h"
-#import "UIImage+compress.h"
-#import "iflyMSC/IFlyFaceSDK.h"
-#import "CaptureManager.h"
-#import "CanvasView.h"
-#import "CalculatorTools.h"
-#import "UIImage+Extensions.h"
-#import "IFlyFaceImage.h"
-#import "IFlyFaceResultKeys.h"
-#import "YFGIFImageView.h"
 @interface RecorderViewController ()
 
 @property (nonatomic,retain) GPUImageVideoCamera *camera;
@@ -31,22 +15,10 @@
 @property (nonatomic,retain) GPUImageMovieWriter *writer;
 @property (nonatomic,retain) GPUImageOutput<GPUImageInput> *filter;
 @property (nonatomic,retain) FilterChooseView * chooseView;
-@property(strong, nonatomic) GPUImageUIElement *uiElementInput;
 @property (nonatomic,strong) NSTimer *timer;
 @property (nonatomic, assign) int count;
 
-@property(strong, nonatomic) CIDetector *faceDetector;
-@property(assign, nonatomic) CGRect faceBounds;
-@property(strong, nonatomic) NSArray *faceBoundArr;
-@property (nonatomic, strong ) IFlyFaceDetector *iflyfaceDetector;
-@property (nonatomic, strong ) CanvasView *viewCanvas;
-@property (nonatomic) UIInterfaceOrientation interfaceOrientation;
-@property (strong,nonatomic) CMMotionManager *motionManager;
-@property (nonatomic, strong)NSArray  *faceInfos; // 人脸信息集 每个人脸的 rect 和特征点 信息
-@property (nonatomic, weak)UIView * elementView;
-@property (nonatomic, assign)CGFloat scale;
-@property(strong, nonatomic)NSMutableArray *imagearr;
-
+// Switching between front and back cameras
 @end
 
 @implementation RecorderViewController
@@ -88,36 +60,6 @@
     _chooseView.hidden = YES;
     
 
-    // 特征检测
-    NSDictionary *detectorOptions = [[NSDictionary alloc] initWithObjectsAndKeys:CIDetectorAccuracyLow, CIDetectorAccuracy, nil];
-    _faceDetector = [CIDetector detectorOfType:CIDetectorTypeFace context:nil options:detectorOptions];
-    _iflyfaceDetector = [IFlyFaceDetector sharedInstance];
-    [_iflyfaceDetector setParameter:@"1"  forKey:@"detect"];
-    [_iflyfaceDetector setParameter:@"1" forKey:@"align"];
-    
-    // 响应链
-    
-    GPUImageAlphaBlendFilter *blendFilter = [[GPUImageAlphaBlendFilter alloc] init];
-    blendFilter.mix = 1;
-    UIView *temp = [[UIView alloc] initWithFrame:_filterView.frame];
-    
-    self.viewCanvas = [[CanvasView alloc] initWithFrame:_filterView.frame] ;
-    // 人脸识别的图片
-    _imagearr = [NSMutableArray array];
-    for (NSInteger i = 0; i < 4; i ++ ) {
-        YFGIFImageView *imageView = [[YFGIFImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-        imageView.contentMode = UIViewContentModeScaleAspectFill;
-        //        imageView.gifPath = [[NSBundle mainBundle] pathForResource:@"tumblr_ngukgdu1FA1s7ldogo1_500.gif" ofType:nil];
-        imageView.gifImages = @[[UIImage imageNamed:@"mon_1"],[UIImage imageNamed:@"mon_2"],[UIImage imageNamed:@"mon_3"],[UIImage imageNamed:@"mon_4"],[UIImage imageNamed:@"mon_5"]];
-        imageView.gifImagesTime = 0.5;
-        [temp addSubview:imageView];
-        imageView.layer.masksToBounds=  YES;
-        imageView.hidden = YES;
-        [_imagearr addObject:imageView];
-    }
-    // 贴图 view
-    _uiElementInput = [[GPUImageUIElement alloc] initWithView:temp];
-    self.elementView = temp;
 }
 
 - (void)setupBtns{
@@ -229,13 +171,14 @@
     }
     
 }
-#pragma mark - 计时器
+
 - (void)repeatShowTime:(NSTimer *)tempTimer {
     
     self.count++;
     
     self.timeLabel.text = [NSString stringWithFormat:@"%02d:%02d",self.count/60,self.count%60];
 }
+
 - (void)dealloc {   //销毁NSTimer
     if (self.timer) {
         [self.timer invalidate];
