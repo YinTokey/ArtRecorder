@@ -7,11 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+///
 @interface RecorderViewController : UIViewController
-
 @property (weak, nonatomic) IBOutlet UIButton *fireworksBtn;
-
 @property (weak, nonatomic) IBOutlet UIButton *faceBtn;
 
 @property (weak, nonatomic) IBOutlet UIButton *filterBtn;
