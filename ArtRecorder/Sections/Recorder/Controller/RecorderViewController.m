@@ -46,12 +46,34 @@
     self.camera.outputImageOrientation = UIInterfaceOrientationPortrait;
     self.camera.horizontallyMirrorFrontFacingCamera = NO;
     self.camera.horizontallyMirrorRearFacingCamera = NO;
-    if (self.filter) {
-        [self.camera addTarget:_filter];
-        [_filter addTarget:_filterView];
-    }else{
-        [self.camera addTarget:_filterView];
-    }
+//    if (self.filter) {
+//        [self.camera addTarget:_filter];
+//        [_filter addTarget:_filterView];
+//    }else{
+//        [self.camera addTarget:_filterView];
+//    }
+    GPUImageFilter *filter = [[GPUImageFilter alloc] init];
+    [self.camera addTarget:filter];
+    
+    self.element = [[GPUImageUIElement alloc] initWithView:self.elementView];
+    
+    GPUImageAlphaBlendFilter *blendFilter = [[GPUImageAlphaBlendFilter alloc] init];
+    blendFilter.mix = 1.0;
+    [_filter addTarget:blendFilter];
+    [self.element addTarget:blendFilter];
+    [blendFilter addTarget:self.filterView];
+    
+    __weak typeof (self) weakSelf = self;
+    [filter setFrameProcessingCompletionBlock:^(GPUImageOutput *output, CMTime time) {
+        __strong typeof (self) strongSelf = weakSelf;
+        // update capImageView's frame
+        CGRect rect = strongSelf.faceBounds;
+        CGSize size = strongSelf.capImageView.frame.size;
+        strongSelf.capImageView.frame = CGRectMake(rect.origin.x +  (rect.size.width - size.width)/2, rect.origin.y - size.height, size.width, size.height);
+        [strongSelf.element update];
+    }];
+    
+    
     [self.camera startCameraCapture];
     
     
@@ -61,7 +83,8 @@
     @weakify(self);
     _chooseView.backback = ^(GPUImageOutput<GPUImageInput> * filter){
         @strongify(self);
-        [self choose_callBack:filter];
+        GPUImageFilter *filter1 = (GPUImageFilter *)filter;
+        [self choose_callBack:filter1];
     };
     [self.view addSubview:_chooseView];
     _chooseView.hidden = YES;
