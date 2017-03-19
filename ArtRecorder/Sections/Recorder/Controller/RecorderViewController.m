@@ -13,10 +13,17 @@
 @property (nonatomic,retain) GPUImageVideoCamera *camera;
 @property (nonatomic,strong) GPUImageView * filterView;
 @property (nonatomic,retain) GPUImageMovieWriter *writer;
-@property (nonatomic,retain) GPUImageOutput<GPUImageInput> *filter;
+@property (nonatomic,retain) GPUImageFilter *filter;
 @property (nonatomic,retain) FilterChooseView * chooseView;
 @property (nonatomic,strong) NSTimer *timer;
 @property (nonatomic, assign) int count;
+
+@property (nonatomic, strong) GPUImageUIElement *element;
+@property (nonatomic, strong) UIView *elementView;
+@property (nonatomic, strong) UIImageView *capImageView;
+@property (nonatomic, assign) CGRect faceBounds;
+@property (nonatomic, strong) CIDetector *faceDetector;
+@property (nonatomic, assign) BOOL faceThinking;
 
 // Switching between front and back cameras
 @end
@@ -93,7 +100,7 @@
 }
 
 #pragma mark 选择滤镜
--(void)choose_callBack:(GPUImageOutput<GPUImageInput> *)filter
+-(void)choose_callBack:(GPUImageFilter *)filter
 {
     BOOL isSelected = self.startBtn.isSelected;
     if (isSelected) {
