@@ -15,6 +15,7 @@
 @property (nonatomic,retain) GPUImageMovieWriter *writer;
 @property (nonatomic,retain) GPUImageFilter *filter;
 @property (nonatomic,retain) FilterChooseView * chooseView;
+@property (nonatomic,retain) GPUImageAlphaBlendFilter *blendFilter;
 @property (nonatomic,strong) NSTimer *timer;
 @property (nonatomic, assign) int count;
 
@@ -54,15 +55,15 @@
     
     self.element = [[GPUImageUIElement alloc] initWithView:self.elementView];
     
-    GPUImageAlphaBlendFilter *blendFilter = [[GPUImageAlphaBlendFilter alloc] init];
-    blendFilter.mix = 1.0;
-    [_filter addTarget:blendFilter];
-    [self.element addTarget:blendFilter];
+    _blendFilter = [[GPUImageAlphaBlendFilter alloc] init];
+    _blendFilter.mix = 1.0;
+    [_filter addTarget:_blendFilter];
+    [self.element addTarget:_blendFilter];
     
     self.filterView = [[GPUImageView alloc] initWithFrame:self.view.frame];
     self.filterView.center = self.view.center;
     [self.view insertSubview:_filterView atIndex:0];
-    [blendFilter addTarget:self.filterView];
+    [_blendFilter addTarget:self.filterView];
     
     __weak typeof (self) weakSelf = self;
     [_filter setFrameProcessingCompletionBlock:^(GPUImageOutput *output, CMTime time) {
@@ -147,7 +148,7 @@
     BOOL isSelected = self.startBtn.isSelected;
     [self.startBtn setSelected:!isSelected];
     if (isSelected) {
-        [self.filter removeTarget:self.writer];
+        [self.blendFilter removeTarget:self.writer];
         self.camera.audioEncodingTarget = nil;
         [self.writer finishRecording];
         UIAlertView * alertview = [[UIAlertView alloc] initWithTitle:@"是否保存到相册" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"保存", nil];
@@ -167,7 +168,7 @@
         
         NSURL *movieURL = [NSURL fileURLWithPath:pathToMovie];
         self.writer = [[GPUImageMovieWriter alloc] initWithMovieURL:movieURL size:CGSizeMake(480.0, 640.0)];
-        [self.filter addTarget:self.writer];
+        [self.blendFilter addTarget:self.writer];
         self.camera.audioEncodingTarget = self.writer;
         [self.writer startRecording];
         //开始计时器
