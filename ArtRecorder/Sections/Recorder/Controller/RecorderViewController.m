@@ -61,7 +61,7 @@
     
     self.filterView = [[GPUImageView alloc] initWithFrame:self.view.frame];
     self.filterView.center = self.view.center;
-    [self.view addSubview:self.filterView];
+    [self.view insertSubview:_filterView atIndex:0];
     [blendFilter addTarget:self.filterView];
     
     __weak typeof (self) weakSelf = self;
@@ -80,15 +80,7 @@
     
     [self setupBtns];
     
-    _chooseView = [[FilterChooseView alloc] initWithFrame:CGRectMake(0, 80, self.view.frame.size.width, 95)];
-    @weakify(self);
-    _chooseView.backback = ^(GPUImageOutput<GPUImageInput> * filter){
-        @strongify(self);
-        GPUImageFilter *filter1 = (GPUImageFilter *)filter;
-        [self choose_callBack:filter1];
-    };
-    [self.view addSubview:_chooseView];
-    _chooseView.hidden = YES;
+    [self setupChooseView];
     
 
 }
@@ -120,6 +112,20 @@
         
         [_camera rotateCamera];
     }];
+
+}
+
+
+- (void)setupChooseView{
+    _chooseView = [[FilterChooseView alloc] initWithFrame:CGRectMake(0, 80, self.view.frame.size.width, 95)];
+    @weakify(self);
+    _chooseView.backback = ^(GPUImageOutput<GPUImageInput> * filter){
+        @strongify(self);
+        GPUImageFilter *filter1 = (GPUImageFilter *)filter;
+        [self choose_callBack:filter1];
+    };
+    [self.view addSubview:_chooseView];
+    _chooseView.hidden = YES;
 
 }
 
