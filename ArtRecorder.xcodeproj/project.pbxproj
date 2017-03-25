@@ -63,6 +63,13 @@
 		C94FC0D51E65D89600105C9F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0D41E65D89600105C9F /* CoreMotion.framework */; };
 		C94FC0D71E65D8E800105C9F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0D61E65D8E800105C9F /* SystemConfiguration.framework */; };
 		C99224B81E6711A700967818 /* FilterArray.m in Sources */ = {isa = PBXBuildFile; fileRef = C99224B71E6711A700967818 /* FilterArray.m */; };
+		C9EC74551E86DBB300F02D3A /* deer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC74541E86DBB300F02D3A /* deer@2x.png */; };
+		C9EC745C1E86DD3700F02D3A /* fire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC74561E86DD3700F02D3A /* fire@2x.png */; };
+		C9EC745D1E86DD3700F02D3A /* fire@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC74571E86DD3700F02D3A /* fire@3x.png */; };
+		C9EC745E1E86DD3700F02D3A /* horn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC74581E86DD3700F02D3A /* horn@2x.png */; };
+		C9EC745F1E86DD3700F02D3A /* horn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC74591E86DD3700F02D3A /* horn@3x.png */; };
+		C9EC74601E86DD3700F02D3A /* wing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC745A1E86DD3700F02D3A /* wing@2x.png */; };
+		C9EC74611E86DD3700F02D3A /* wing@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC745B1E86DD3700F02D3A /* wing@3x.png */; };
 		EE3B50300BD5E1948DCF74A0 /* libPods-ArtRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */; };
 /* End PBXBuildFile section */
 
@@ -168,6 +175,13 @@
 		C94FC0D61E65D8E800105C9F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C99224B61E6711A700967818 /* FilterArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterArray.h; sourceTree = "<group>"; };
 		C99224B71E6711A700967818 /* FilterArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterArray.m; sourceTree = "<group>"; };
+		C9EC74541E86DBB300F02D3A /* deer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deer@2x.png"; sourceTree = "<group>"; };
+		C9EC74561E86DD3700F02D3A /* fire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire@2x.png"; sourceTree = "<group>"; };
+		C9EC74571E86DD3700F02D3A /* fire@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fire@3x.png"; sourceTree = "<group>"; };
+		C9EC74581E86DD3700F02D3A /* horn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "horn@2x.png"; sourceTree = "<group>"; };
+		C9EC74591E86DD3700F02D3A /* horn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "horn@3x.png"; sourceTree = "<group>"; };
+		C9EC745A1E86DD3700F02D3A /* wing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wing@2x.png"; sourceTree = "<group>"; };
+		C9EC745B1E86DD3700F02D3A /* wing@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wing@3x.png"; sourceTree = "<group>"; };
 		D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArtRecorder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -479,6 +493,13 @@
 		C9077BBF1E69C762009D4615 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C9EC74561E86DD3700F02D3A /* fire@2x.png */,
+				C9EC74571E86DD3700F02D3A /* fire@3x.png */,
+				C9EC74581E86DD3700F02D3A /* horn@2x.png */,
+				C9EC74591E86DD3700F02D3A /* horn@3x.png */,
+				C9EC745A1E86DD3700F02D3A /* wing@2x.png */,
+				C9EC745B1E86DD3700F02D3A /* wing@3x.png */,
+				C9EC74541E86DBB300F02D3A /* deer@2x.png */,
 				C9077C201E6C7D34009D4615 /* pause.png */,
 				C9077C211E6C7D34009D4615 /* pause@2x.png */,
 				C9077C221E6C7D34009D4615 /* pause@3x.png */,
@@ -627,20 +648,27 @@
 				C9077C0E1E6C77C9009D4615 /* camera.png in Resources */,
 				C9077C1E1E6C7AC6009D4615 /* close@2x.png in Resources */,
 				C9077C121E6C77C9009D4615 /* face@2x.png in Resources */,
+				C9EC74611E86DD3700F02D3A /* wing@3x.png in Resources */,
+				C9EC745F1E86DD3700F02D3A /* horn@3x.png in Resources */,
 				C9077C031E6C77BF009D4615 /* switch@2x.png in Resources */,
 				C9077C011E6C77BF009D4615 /* Star@3x.png in Resources */,
 				C9077C041E6C77BF009D4615 /* switch@3x.png in Resources */,
 				C9077BCA1E69C762009D4615 /* filter_4.png in Resources */,
+				C9EC74601E86DD3700F02D3A /* wing@2x.png in Resources */,
 				C9077BC81E69C762009D4615 /* filter_2.png in Resources */,
 				C9077C061E6C77BF009D4615 /* Triangle@2x.png in Resources */,
 				C9077C231E6C7D34009D4615 /* pause.png in Resources */,
+				C9EC74551E86DBB300F02D3A /* deer@2x.png in Resources */,
 				C9077BFF1E6C77BF009D4615 /* Star.png in Resources */,
 				B3FE74F41E598916009CBBDA /* RecorderViewController.xib in Resources */,
+				C9EC745C1E86DD3700F02D3A /* fire@2x.png in Resources */,
+				C9EC745D1E86DD3700F02D3A /* fire@3x.png in Resources */,
 				C9077BCB1E69C762009D4615 /* filter_5.png in Resources */,
 				C9077C0F1E6C77C9009D4615 /* camera@2x.png in Resources */,
 				C9077C051E6C77BF009D4615 /* Triangle.png in Resources */,
 				C9077C001E6C77BF009D4615 /* Star@2x.png in Resources */,
 				C9077BC91E69C762009D4615 /* filter_3.png in Resources */,
+				C9EC745E1E86DD3700F02D3A /* horn@2x.png in Resources */,
 				C9077BC71E69C762009D4615 /* filter_1.png in Resources */,
 				C9077C131E6C77C9009D4615 /* face@3x.png in Resources */,
 				C9077C1D1E6C7AC6009D4615 /* close.png in Resources */,
