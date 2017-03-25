@@ -385,8 +385,8 @@
 - (UIView *)elementView {
     if (!_elementView) {
         _elementView = [[UIView alloc] initWithFrame:self.view.frame];
-        _capImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 160, 160)];
-        [_capImageView setImage:[UIImage imageNamed:@"face.png"]];
+        _capImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 160)];
+        [_capImageView setImage:[UIImage imageNamed:@"fire.png"]];
         [_elementView addSubview:_capImageView];
     }
     return _elementView;
