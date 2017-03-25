@@ -26,6 +26,9 @@
 @property (nonatomic, strong) CIDetector *faceDetector;
 @property (nonatomic, assign) BOOL faceThinking;
 
+//风景滤镜模式
+@property (nonatomic,assign) BOOL filterMode;
+
 // Switching between front and back cameras
 @end
 
@@ -83,6 +86,7 @@
     
     [self setupChooseView];
     
+    _filterMode = NO;
 
 }
 
@@ -120,10 +124,10 @@
 - (void)setupChooseView{
     _chooseView = [[FilterChooseView alloc] initWithFrame:CGRectMake(0, 80, self.view.frame.size.width, 95)];
     @weakify(self);
-    _chooseView.backback = ^(GPUImageOutput<GPUImageInput> * filter){
+    _chooseView.backback = ^(GPUImageFilter * filter){
         @strongify(self);
-        GPUImageFilter *filter1 = (GPUImageFilter *)filter;
-        [self choose_callBack:filter1];
+        _filter = (GPUImageFilter *)filter;
+        [self choose_callBack:self.filter];
     };
     [self.view addSubview:_chooseView];
     _chooseView.hidden = YES;
@@ -141,6 +145,8 @@
     [self.camera removeAllTargets];
     [self.camera addTarget:_filter];
     [_filter addTarget:_filterView];
+    
+    _filterMode = YES;
 }
 
 - (void)start_stop
@@ -148,7 +154,13 @@
     BOOL isSelected = self.startBtn.isSelected;
     [self.startBtn setSelected:!isSelected];
     if (isSelected) {
-        [self.blendFilter removeTarget:self.writer];
+        if(_filterMode == NO){
+            [self.blendFilter removeTarget:self.writer];
+        }else{
+            // 风景滤镜模式，用filter写
+            [self.filter removeTarget:self.writer];
+        }
+        
         self.camera.audioEncodingTarget = nil;
         [self.writer finishRecording];
         UIAlertView * alertview = [[UIAlertView alloc] initWithTitle:@"是否保存到相册" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"保存", nil];
@@ -168,7 +180,13 @@
         
         NSURL *movieURL = [NSURL fileURLWithPath:pathToMovie];
         self.writer = [[GPUImageMovieWriter alloc] initWithMovieURL:movieURL size:CGSizeMake(480.0, 640.0)];
-        [self.blendFilter addTarget:self.writer];
+        
+        if(_filterMode == NO){
+            [self.blendFilter addTarget:self.writer];
+        }else{
+            // 风景滤镜模式，用filter写
+            [self.filter addTarget:self.writer];
+        }
         self.camera.audioEncodingTarget = self.writer;
         [self.writer startRecording];
         //开始计时器
