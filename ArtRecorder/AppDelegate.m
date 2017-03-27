@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
+#import <Bmob.h>
 @interface AppDelegate ()
 
 @end
@@ -24,6 +25,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
+    [Bmob registerWithAppKey:@"e76bed42f95c1eea693e093bdeca3182"];
+    
     return YES;
 }
 

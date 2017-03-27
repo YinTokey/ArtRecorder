@@ -1,4 +1,5 @@
 PODS:
+  - BmobSDK (2.0.7)
   - GPUImage (0.1.7)
   - Masonry (1.0.2)
   - ReactiveCocoa (2.5):
@@ -11,17 +12,19 @@ PODS:
   - SCRecorder (2.7.0)
 
 DEPENDENCIES:
+  - BmobSDK
   - GPUImage
   - Masonry
   - ReactiveCocoa (= 2.5)
   - SCRecorder
 
 SPEC CHECKSUMS:
+  BmobSDK: 858fe86a3600d2dda7ad549ff8f22458d4d1093d
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SCRecorder: bbb521dbc222908876ec9cd9156bbc8a893bed44
 
-PODFILE CHECKSUM: 41af7cfb4e3164c299a107d2c200dc9ccf6e754b
+PODFILE CHECKSUM: 30fa33f9650bee8fcc750d471b8e2f955626c1cc
 
 COCOAPODS: 1.1.1
