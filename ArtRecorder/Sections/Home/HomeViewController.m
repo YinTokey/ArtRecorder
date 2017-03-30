@@ -23,7 +23,7 @@
 
 - (void)setupButtons{
     UIButton *startBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 160, 80)];
-    [startBtn setTitle:@"开始录制" forState:UIControlStateNormal];
+    [startBtn setTitle:@"START" forState:UIControlStateNormal];
     startBtn.backgroundColor = [UIColor blackColor];
     [self.view addSubview:startBtn];
     @weakify(self);
@@ -41,7 +41,7 @@
     
     
     UIButton *openBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 160, 80)];
-    [openBtn setTitle:@"打开视频" forState:UIControlStateNormal];
+    [openBtn setTitle:@"OPEN" forState:UIControlStateNormal];
     openBtn.backgroundColor = [UIColor purpleColor];
     [self.view addSubview:openBtn];
     [openBtn mas_makeConstraints:^(MASConstraintMaker *make) {
