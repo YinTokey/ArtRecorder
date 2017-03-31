@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-1746" y="-333"/>
         </scene>
-        <!--Table View Controller-->
+        <!--首页推荐-->
         <scene sceneID="pbB-ls-dEd">
             <objects>
-                <tableViewController id="BJU-84-M0z" sceneMemberID="viewController">
+                <tableViewController id="BJU-84-M0z" customClass="HomeTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="YnE-Uf-7Qm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
                             <outlet property="delegate" destination="BJU-84-M0z" id="3vo-MZ-yct"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="g86-lI-hnX"/>
+                    <navigationItem key="navigationItem" title="首页推荐" id="g86-lI-hnX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Se-gT-M25" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,7 +58,6 @@
         <!--Tabbar Controller-->
         <scene sceneID="gft-1X-FGb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Pjn-ZE-Uu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="YJTabVC" id="Yvg-U3-CEw" customClass="YJTabbarController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="jNj-QD-2cL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -72,6 +71,7 @@
                         <segue destination="R6T-Jf-aaG" kind="relationship" relationship="viewControllers" id="hc3-Zk-Qbg"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pjn-ZE-Uu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-334" y="-1045"/>
         </scene>
@@ -126,7 +126,7 @@
             </objects>
             <point key="canvasLocation" x="770" y="-333"/>
         </scene>
-        <!--Discover View Controller-->
+        <!--专题-->
         <scene sceneID="J4L-lZ-Opa">
             <objects>
                 <tableViewController id="HO1-H7-MFs" customClass="YJDiscoverViewController" sceneMemberID="viewController">
@@ -149,13 +149,13 @@
                             <outlet property="delegate" destination="HO1-H7-MFs" id="Zv5-0N-3XB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="5RG-s1-rGa"/>
+                    <navigationItem key="navigationItem" title="专题" id="5RG-s1-rGa"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yH3-vI-4Tl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-842" y="331"/>
         </scene>
-        <!--Home View Controller-->
+        <!--录像-->
         <scene sceneID="HY0-W5-441">
             <objects>
                 <viewController id="PcX-3N-rMV" customClass="HomeViewController" sceneMemberID="viewController">
@@ -168,7 +168,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="o33-2P-9er"/>
+                    <navigationItem key="navigationItem" title="录像" id="o33-2P-9er"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8m-SQ-M2I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

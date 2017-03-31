@@ -68,6 +68,10 @@
 		C94E391B1E8D6FBA00F7F066 /* icon4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C94E390F1E8D6FBA00F7F066 /* icon4@2x.png */; };
 		C94E391C1E8D6FBA00F7F066 /* icon4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C94E39101E8D6FBA00F7F066 /* icon4@3x.png */; };
 		C94E391F1E8D708100F7F066 /* YJTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94E391E1E8D708100F7F066 /* YJTabbarController.m */; };
+		C94E39221E8EA14300F7F066 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94E39211E8EA14300F7F066 /* HomeTableViewController.m */; };
+		C94E39261E8EA28B00F7F066 /* YJVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C94E39241E8EA28B00F7F066 /* YJVideoCell.m */; };
+		C94E39271E8EA28B00F7F066 /* YJVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C94E39251E8EA28B00F7F066 /* YJVideoCell.xib */; };
+		C94E392A1E8EA61100F7F066 /* YJVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C94E39291E8EA61100F7F066 /* YJVideoModel.m */; };
 		C94FC0C71E65D36600105C9F /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0C61E65D36600105C9F /* iflyMSC.framework */; };
 		C94FC0C91E65D71800105C9F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0C81E65D71800105C9F /* AddressBook.framework */; };
 		C94FC0CB1E65D7D600105C9F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0CA1E65D7D600105C9F /* GLKit.framework */; };
@@ -196,6 +200,13 @@
 		C94E39101E8D6FBA00F7F066 /* icon4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon4@3x.png"; sourceTree = "<group>"; };
 		C94E391D1E8D708100F7F066 /* YJTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTabbarController.h; sourceTree = "<group>"; };
 		C94E391E1E8D708100F7F066 /* YJTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTabbarController.m; sourceTree = "<group>"; };
+		C94E39201E8EA14300F7F066 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		C94E39211E8EA14300F7F066 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		C94E39231E8EA28B00F7F066 /* YJVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJVideoCell.h; sourceTree = "<group>"; };
+		C94E39241E8EA28B00F7F066 /* YJVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJVideoCell.m; sourceTree = "<group>"; };
+		C94E39251E8EA28B00F7F066 /* YJVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YJVideoCell.xib; sourceTree = "<group>"; };
+		C94E39281E8EA61100F7F066 /* YJVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJVideoModel.h; sourceTree = "<group>"; };
+		C94E39291E8EA61100F7F066 /* YJVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJVideoModel.m; sourceTree = "<group>"; };
 		C94FC0C61E65D36600105C9F /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = "../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/iflyMSC.framework"; sourceTree = "<group>"; };
 		C94FC0C81E65D71800105C9F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C94FC0CA1E65D7D600105C9F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -370,6 +381,8 @@
 				C94E39031E8D6DC600F7F066 /* Main.storyboard */,
 				C94E391D1E8D708100F7F066 /* YJTabbarController.h */,
 				C94E391E1E8D708100F7F066 /* YJTabbarController.m */,
+				C94E39201E8EA14300F7F066 /* HomeTableViewController.h */,
+				C94E39211E8EA14300F7F066 /* HomeTableViewController.m */,
 			);
 			name = Sections;
 			path = "../../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/Sections";
@@ -585,6 +598,11 @@
 			children = (
 				C94E38F31E8D6C1800F7F066 /* YJDiscoverViewController.h */,
 				C94E38F41E8D6C1800F7F066 /* YJDiscoverViewController.m */,
+				C94E39231E8EA28B00F7F066 /* YJVideoCell.h */,
+				C94E39241E8EA28B00F7F066 /* YJVideoCell.m */,
+				C94E39251E8EA28B00F7F066 /* YJVideoCell.xib */,
+				C94E39281E8EA61100F7F066 /* YJVideoModel.h */,
+				C94E39291E8EA61100F7F066 /* YJVideoModel.m */,
 			);
 			name = Discover;
 			sourceTree = "<group>";
@@ -726,6 +744,7 @@
 				C9077BCA1E69C762009D4615 /* filter_4.png in Resources */,
 				C9EC74601E86DD3700F02D3A /* wing@2x.png in Resources */,
 				C94E39041E8D6DC600F7F066 /* Main.storyboard in Resources */,
+				C94E39271E8EA28B00F7F066 /* YJVideoCell.xib in Resources */,
 				C9077BC81E69C762009D4615 /* filter_2.png in Resources */,
 				C9077C061E6C77BF009D4615 /* Triangle@2x.png in Resources */,
 				C9077C231E6C7D34009D4615 /* pause.png in Resources */,
@@ -834,9 +853,12 @@
 				C99224B81E6711A700967818 /* FilterArray.m in Sources */,
 				B3FE74F31E598916009CBBDA /* RecorderViewController.m in Sources */,
 				B3FE74EF1E58CC66009CBBDA /* VideoViewController.m in Sources */,
+				C94E39261E8EA28B00F7F066 /* YJVideoCell.m in Sources */,
 				B30E02D61E55EC220009B56E /* AppDelegate.m in Sources */,
 				B3F8C0051E5F39D200FE46AA /* FilterChooseView.m in Sources */,
 				C94E38F61E8D6C1800F7F066 /* YJDiscoverViewController.m in Sources */,
+				C94E39221E8EA14300F7F066 /* HomeTableViewController.m in Sources */,
+				C94E392A1E8EA61100F7F066 /* YJVideoModel.m in Sources */,
 				B30E02D31E55EC220009B56E /* main.m in Sources */,
 				B3FE74E81E58C1D3009CBBDA /* HomeViewController.m in Sources */,
 				C94E391F1E8D708100F7F066 /* YJTabbarController.m in Sources */,
