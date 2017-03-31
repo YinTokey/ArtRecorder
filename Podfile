@@ -6,4 +6,6 @@ pod 'SCRecorder'
 pod 'Masonry'
 pod 'GPUImage'
 pod 'BmobSDK'
+pod 'MJExtension'
+pod 'SDWebImage'
 end

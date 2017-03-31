@@ -21,6 +21,7 @@
 #import <Masonry.h>
 #import <SCRecorder/SCRecorder.h>
 #import "GPUImage.h"
-
+#import <MJExtension.h>
+#import "UIImageView+WebCache.h"
 
 #endif /* PrefixHeader_pch */
