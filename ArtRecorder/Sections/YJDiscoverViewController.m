@@ -10,6 +10,8 @@
 #import "YJVideoModel.h"
 #import <Bmob.h>
 #import "YJVideoCell.h"
+#import "DetailViewController.h"
+
 @interface YJDiscoverViewController ()
 
 @property(nonatomic ,strong) NSMutableArray *datasourceDics;
@@ -59,7 +61,18 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
+    DetailViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"detailVC"];
+    NSDictionary *dic = [self.datasourceDics objectAtIndex:indexPath.row];
+
+    vc.playUrl = [dic objectForKey:@"playUrl"];
+    vc.descs = [dic objectForKey:@"description"];
+    vc.titletext = [dic objectForKey:@"title"];
+    vc.feed = [dic objectForKey:@"feed"];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 @end
