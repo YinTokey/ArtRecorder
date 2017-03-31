@@ -80,6 +80,9 @@
                                     <constraint firstAttribute="height" constant="66" id="1yI-QJ-Mit"/>
                                 </constraints>
                                 <state key="normal" image="Triangle.png"/>
+                                <connections>
+                                    <action selector="playClick:" destination="iXa-U8-Esg" eventType="touchUpInside" id="sJd-G6-gOl"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CK5-fB-cKR">
                                 <rect key="frame" x="0.0" y="325" width="375" height="303"/>
@@ -124,6 +127,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9c-TQ-PiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1698.4000000000001" y="1052.9235382308846"/>
+        </scene>
+        <!--Play View Controller-->
+        <scene sceneID="Jv5-Qq-SLc">
+            <objects>
+                <viewController storyboardIdentifier="playVC" id="6fd-sh-yJB" customClass="PlayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rxU-Bs-LbQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="xpe-o8-6F2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f6V-4V-hmr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Miu-Z8-kZ2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Miu-Z8-kZ2" firstAttribute="top" secondItem="f6V-4V-hmr" secondAttribute="top" id="6aN-Sk-tGM"/>
+                            <constraint firstAttribute="trailing" secondItem="Miu-Z8-kZ2" secondAttribute="trailing" id="99Z-ke-Ft9"/>
+                            <constraint firstItem="xpe-o8-6F2" firstAttribute="top" secondItem="Miu-Z8-kZ2" secondAttribute="bottom" id="yzN-2M-WHK"/>
+                            <constraint firstItem="Miu-Z8-kZ2" firstAttribute="leading" secondItem="f6V-4V-hmr" secondAttribute="leading" id="z0r-24-Df8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="Miu-Z8-kZ2" id="zEv-Mh-Gl2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLI-5l-oZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-957.60000000000002" y="1037.6311844077961"/>
         </scene>
         <!--Tabbar Controller-->
         <scene sceneID="gft-1X-FGb">

@@ -8,6 +8,8 @@
 
 #import "DetailViewController.h"
 
+#import "PlayViewController.h"
+
 @interface DetailViewController ()
 
 @end
@@ -22,6 +24,12 @@
     [self.imgV sd_setImageWithURL:[NSURL URLWithString:self.feed]];
     self.desc.text = self.descs;
     
+}
+- (IBAction)playClick:(id)sender {
+    
+    PlayViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"playVC"];
+    vc.playUrl= self.playUrl;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
