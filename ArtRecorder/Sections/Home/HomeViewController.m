@@ -37,9 +37,7 @@
         @strongify(self);
         [self.navigationController pushViewController:recorderVC animated:NO];
     }];
-    
-    
-    
+
     UIButton *openBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 160, 80)];
     [openBtn setTitle:@"OPEN" forState:UIControlStateNormal];
     openBtn.backgroundColor = [UIColor purpleColor];
