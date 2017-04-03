@@ -8,6 +8,8 @@
 
 #import "RecorderViewController.h"
 #import "FilterChooseView.h"
+
+#import "EHSocialShareViewModel.h"
 @interface RecorderViewController ()<GPUImageVideoCameraDelegate>
 
 @property (nonatomic,retain) GPUImageVideoCamera *camera;
@@ -30,13 +32,15 @@
 @property (nonatomic,assign) BOOL filterMode;
 
 @property (nonatomic,strong)UIAlertView *shareAlertView;
-
 // Switching between front and back cameras
 @end
 
 @implementation RecorderViewController
 {
     NSString *pathToMovie;
+    NSMutableArray *titleArray;
+    NSMutableArray *picArray;
+    
     
 }
 - (void)viewDidLoad {
@@ -221,7 +225,14 @@
     if(alertView.tag == 1){
     
         if(buttonIndex == 1){
-            NSLog(@"社交分享");
+            NSString *prefix = @"photos";
+            NSString *urlStr = [NSString stringWithFormat:@"%@-redirect:",prefix];
+            NSURL *url = [NSURL URLWithString:urlStr];
+            
+            if ([[UIApplication sharedApplication] canOpenURL:url]) {
+                [[UIApplication sharedApplication] openURL:url];
+            }
+            
         }
     }
     

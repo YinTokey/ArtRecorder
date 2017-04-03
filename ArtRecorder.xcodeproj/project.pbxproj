@@ -91,6 +91,26 @@
 		C9EC745F1E86DD3700F02D3A /* horn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC74591E86DD3700F02D3A /* horn@3x.png */; };
 		C9EC74601E86DD3700F02D3A /* wing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC745A1E86DD3700F02D3A /* wing@2x.png */; };
 		C9EC74611E86DD3700F02D3A /* wing@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC745B1E86DD3700F02D3A /* wing@3x.png */; };
+		C9EE479C1E924FF600DEA648 /* EHSocialShareViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE479B1E924FF600DEA648 /* EHSocialShareViewModel.m */; };
+		C9EE47A31E92507D00DEA648 /* share_cancel_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE479D1E92507D00DEA648 /* share_cancel_btn@2x.png */; };
+		C9EE47A41E92507D00DEA648 /* share_qq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE479E1E92507D00DEA648 /* share_qq@2x.png */; };
+		C9EE47A51E92507D00DEA648 /* share_qzone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE479F1E92507D00DEA648 /* share_qzone@2x.png */; };
+		C9EE47A61E92507D00DEA648 /* share_timeline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47A01E92507D00DEA648 /* share_timeline@2x.png */; };
+		C9EE47A71E92507D00DEA648 /* share_wechat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47A11E92507D00DEA648 /* share_wechat@2x.png */; };
+		C9EE47A81E92507D00DEA648 /* share_weibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47A21E92507D00DEA648 /* share_weibo@2x.png */; };
+		C9EE47C71E92659800DEA648 /* JKDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE47B71E92659800DEA648 /* JKDBHelper.m */; };
+		C9EE47C81E92659800DEA648 /* JKDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE47B91E92659800DEA648 /* JKDBModel.m */; };
+		C9EE47C91E92659800DEA648 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE47BC1E92659800DEA648 /* FMDatabase.m */; };
+		C9EE47CA1E92659800DEA648 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE47BE1E92659800DEA648 /* FMDatabaseAdditions.m */; };
+		C9EE47CB1E92659800DEA648 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE47C01E92659800DEA648 /* FMDatabasePool.m */; };
+		C9EE47CC1E92659800DEA648 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE47C21E92659800DEA648 /* FMDatabaseQueue.m */; };
+		C9EE47CD1E92659800DEA648 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE47C51E92659800DEA648 /* FMResultSet.m */; };
+		C9EE47CE1E92659800DEA648 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47C61E92659800DEA648 /* Info.plist */; };
+		C9EE47D31E9288C000DEA648 /* Star 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47CF1E9288C000DEA648 /* Star 1@2x.png */; };
+		C9EE47D41E9288C000DEA648 /* Star 1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47D01E9288C000DEA648 /* Star 1@3x.png */; };
+		C9EE47D51E9288C000DEA648 /* Star 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47D11E9288C000DEA648 /* Star 2@2x.png */; };
+		C9EE47D61E9288C000DEA648 /* Star 2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47D21E9288C000DEA648 /* Star 2@3x.png */; };
+		C9EE47D91E928D1C00DEA648 /* YJPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE47D81E928D1C00DEA648 /* YJPersonViewController.m */; };
 		EE3B50300BD5E1948DCF74A0 /* libPods-ArtRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */; };
 /* End PBXBuildFile section */
 
@@ -231,6 +251,36 @@
 		C9EC74591E86DD3700F02D3A /* horn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "horn@3x.png"; sourceTree = "<group>"; };
 		C9EC745A1E86DD3700F02D3A /* wing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wing@2x.png"; sourceTree = "<group>"; };
 		C9EC745B1E86DD3700F02D3A /* wing@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wing@3x.png"; sourceTree = "<group>"; };
+		C9EE479A1E924FF600DEA648 /* EHSocialShareViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHSocialShareViewModel.h; sourceTree = "<group>"; };
+		C9EE479B1E924FF600DEA648 /* EHSocialShareViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHSocialShareViewModel.m; sourceTree = "<group>"; };
+		C9EE479D1E92507D00DEA648 /* share_cancel_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_cancel_btn@2x.png"; sourceTree = "<group>"; };
+		C9EE479E1E92507D00DEA648 /* share_qq@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_qq@2x.png"; sourceTree = "<group>"; };
+		C9EE479F1E92507D00DEA648 /* share_qzone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_qzone@2x.png"; sourceTree = "<group>"; };
+		C9EE47A01E92507D00DEA648 /* share_timeline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_timeline@2x.png"; sourceTree = "<group>"; };
+		C9EE47A11E92507D00DEA648 /* share_wechat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_wechat@2x.png"; sourceTree = "<group>"; };
+		C9EE47A21E92507D00DEA648 /* share_weibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share_weibo@2x.png"; sourceTree = "<group>"; };
+		C9EE47B61E92659800DEA648 /* JKDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDBHelper.h; sourceTree = "<group>"; };
+		C9EE47B71E92659800DEA648 /* JKDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDBHelper.m; sourceTree = "<group>"; };
+		C9EE47B81E92659800DEA648 /* JKDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDBModel.h; sourceTree = "<group>"; };
+		C9EE47B91E92659800DEA648 /* JKDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDBModel.m; sourceTree = "<group>"; };
+		C9EE47BB1E92659800DEA648 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		C9EE47BC1E92659800DEA648 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		C9EE47BD1E92659800DEA648 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		C9EE47BE1E92659800DEA648 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		C9EE47BF1E92659800DEA648 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		C9EE47C01E92659800DEA648 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		C9EE47C11E92659800DEA648 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		C9EE47C21E92659800DEA648 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		C9EE47C31E92659800DEA648 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		C9EE47C41E92659800DEA648 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		C9EE47C51E92659800DEA648 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		C9EE47C61E92659800DEA648 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9EE47CF1E9288C000DEA648 /* Star 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star 1@2x.png"; sourceTree = "<group>"; };
+		C9EE47D01E9288C000DEA648 /* Star 1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star 1@3x.png"; sourceTree = "<group>"; };
+		C9EE47D11E9288C000DEA648 /* Star 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star 2@2x.png"; sourceTree = "<group>"; };
+		C9EE47D21E9288C000DEA648 /* Star 2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star 2@3x.png"; sourceTree = "<group>"; };
+		C9EE47D71E928D1C00DEA648 /* YJPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJPersonViewController.h; sourceTree = "<group>"; };
+		C9EE47D81E928D1C00DEA648 /* YJPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJPersonViewController.m; sourceTree = "<group>"; };
 		D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArtRecorder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -540,6 +590,10 @@
 		C9077BBC1E69C1F8009D4615 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C9EE47B51E92659800DEA648 /* DBModel */,
+				C9EE47BA1E92659800DEA648 /* fmdb */,
+				C9EE479A1E924FF600DEA648 /* EHSocialShareViewModel.h */,
+				C9EE479B1E924FF600DEA648 /* EHSocialShareViewModel.m */,
 				C9077BBF1E69C762009D4615 /* images */,
 			);
 			name = Sources;
@@ -549,6 +603,16 @@
 		C9077BBF1E69C762009D4615 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C9EE47CF1E9288C000DEA648 /* Star 1@2x.png */,
+				C9EE47D01E9288C000DEA648 /* Star 1@3x.png */,
+				C9EE47D11E9288C000DEA648 /* Star 2@2x.png */,
+				C9EE47D21E9288C000DEA648 /* Star 2@3x.png */,
+				C9EE479D1E92507D00DEA648 /* share_cancel_btn@2x.png */,
+				C9EE479E1E92507D00DEA648 /* share_qq@2x.png */,
+				C9EE479F1E92507D00DEA648 /* share_qzone@2x.png */,
+				C9EE47A01E92507D00DEA648 /* share_timeline@2x.png */,
+				C9EE47A11E92507D00DEA648 /* share_wechat@2x.png */,
+				C9EE47A21E92507D00DEA648 /* share_weibo@2x.png */,
 				C94E39051E8D6FBA00F7F066 /* icon1.png */,
 				C94E39061E8D6FBA00F7F066 /* icon1@2x.png */,
 				C94E39071E8D6FBA00F7F066 /* icon1@3x.png */,
@@ -620,8 +684,40 @@
 		C94E38F81E8D6C3F00F7F066 /* Person */ = {
 			isa = PBXGroup;
 			children = (
+				C9EE47D71E928D1C00DEA648 /* YJPersonViewController.h */,
+				C9EE47D81E928D1C00DEA648 /* YJPersonViewController.m */,
 			);
 			name = Person;
+			sourceTree = "<group>";
+		};
+		C9EE47B51E92659800DEA648 /* DBModel */ = {
+			isa = PBXGroup;
+			children = (
+				C9EE47B61E92659800DEA648 /* JKDBHelper.h */,
+				C9EE47B71E92659800DEA648 /* JKDBHelper.m */,
+				C9EE47B81E92659800DEA648 /* JKDBModel.h */,
+				C9EE47B91E92659800DEA648 /* JKDBModel.m */,
+			);
+			path = DBModel;
+			sourceTree = "<group>";
+		};
+		C9EE47BA1E92659800DEA648 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				C9EE47BB1E92659800DEA648 /* FMDatabase.h */,
+				C9EE47BC1E92659800DEA648 /* FMDatabase.m */,
+				C9EE47BD1E92659800DEA648 /* FMDatabaseAdditions.h */,
+				C9EE47BE1E92659800DEA648 /* FMDatabaseAdditions.m */,
+				C9EE47BF1E92659800DEA648 /* FMDatabasePool.h */,
+				C9EE47C01E92659800DEA648 /* FMDatabasePool.m */,
+				C9EE47C11E92659800DEA648 /* FMDatabaseQueue.h */,
+				C9EE47C21E92659800DEA648 /* FMDatabaseQueue.m */,
+				C9EE47C31E92659800DEA648 /* FMDB.h */,
+				C9EE47C41E92659800DEA648 /* FMResultSet.h */,
+				C9EE47C51E92659800DEA648 /* FMResultSet.m */,
+				C9EE47C61E92659800DEA648 /* Info.plist */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -748,6 +844,7 @@
 				C94E391B1E8D6FBA00F7F066 /* icon4@2x.png in Resources */,
 				C9EC74611E86DD3700F02D3A /* wing@3x.png in Resources */,
 				C9EC745F1E86DD3700F02D3A /* horn@3x.png in Resources */,
+				C9EE47A31E92507D00DEA648 /* share_cancel_btn@2x.png in Resources */,
 				C9077C031E6C77BF009D4615 /* switch@2x.png in Resources */,
 				C9077C011E6C77BF009D4615 /* Star@3x.png in Resources */,
 				C9077C041E6C77BF009D4615 /* switch@3x.png in Resources */,
@@ -755,14 +852,19 @@
 				C9EC74601E86DD3700F02D3A /* wing@2x.png in Resources */,
 				C94E39041E8D6DC600F7F066 /* Main.storyboard in Resources */,
 				C94E39271E8EA28B00F7F066 /* YJVideoCell.xib in Resources */,
+				C9EE47A81E92507D00DEA648 /* share_weibo@2x.png in Resources */,
 				C9077BC81E69C762009D4615 /* filter_2.png in Resources */,
+				C9EE47A51E92507D00DEA648 /* share_qzone@2x.png in Resources */,
+				C9EE47D41E9288C000DEA648 /* Star 1@3x.png in Resources */,
 				C9077C061E6C77BF009D4615 /* Triangle@2x.png in Resources */,
+				C9EE47A71E92507D00DEA648 /* share_wechat@2x.png in Resources */,
 				C9077C231E6C7D34009D4615 /* pause.png in Resources */,
 				C9EC74551E86DBB300F02D3A /* deer@2x.png in Resources */,
 				C9077BFF1E6C77BF009D4615 /* Star.png in Resources */,
 				B3FE74F41E598916009CBBDA /* RecorderViewController.xib in Resources */,
 				C9EC745C1E86DD3700F02D3A /* fire@2x.png in Resources */,
 				C9EC745D1E86DD3700F02D3A /* fire@3x.png in Resources */,
+				C9EE47D51E9288C000DEA648 /* Star 2@2x.png in Resources */,
 				C94E39131E8D6FBA00F7F066 /* icon1@3x.png in Resources */,
 				C9077BCB1E69C762009D4615 /* filter_5.png in Resources */,
 				C9077C0F1E6C77C9009D4615 /* camera@2x.png in Resources */,
@@ -775,10 +877,14 @@
 				C9077BC71E69C762009D4615 /* filter_1.png in Resources */,
 				C9077C131E6C77C9009D4615 /* face@3x.png in Resources */,
 				C9077C1D1E6C7AC6009D4615 /* close.png in Resources */,
+				C9EE47A41E92507D00DEA648 /* share_qq@2x.png in Resources */,
+				C9EE47CE1E92659800DEA648 /* Info.plist in Resources */,
 				C9077C071E6C77BF009D4615 /* Triangle@3x.png in Resources */,
 				C9077C251E6C7D34009D4615 /* pause@3x.png in Resources */,
+				C9EE47D31E9288C000DEA648 /* Star 1@2x.png in Resources */,
 				C9077BC61E69C762009D4615 /* 1.jpg in Resources */,
 				B30E02E11E55EC220009B56E /* LaunchScreen.storyboard in Resources */,
+				C9EE47A61E92507D00DEA648 /* share_timeline@2x.png in Resources */,
 				C9077C101E6C77C9009D4615 /* camera@3x.png in Resources */,
 				C94E391A1E8D6FBA00F7F066 /* icon4.png in Resources */,
 				C9077C241E6C7D34009D4615 /* pause@2x.png in Resources */,
@@ -788,6 +894,7 @@
 				C94E391C1E8D6FBA00F7F066 /* icon4@3x.png in Resources */,
 				C94E39111E8D6FBA00F7F066 /* icon1.png in Resources */,
 				C94E39171E8D6FBA00F7F066 /* icon3.png in Resources */,
+				C9EE47D61E9288C000DEA648 /* Star 2@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,16 +969,25 @@
 			files = (
 				C99224B81E6711A700967818 /* FilterArray.m in Sources */,
 				B3FE74F31E598916009CBBDA /* RecorderViewController.m in Sources */,
+				C9EE47C71E92659800DEA648 /* JKDBHelper.m in Sources */,
+				C9EE47C91E92659800DEA648 /* FMDatabase.m in Sources */,
 				B3FE74EF1E58CC66009CBBDA /* VideoViewController.m in Sources */,
+				C9EE47C81E92659800DEA648 /* JKDBModel.m in Sources */,
 				C94E39261E8EA28B00F7F066 /* YJVideoCell.m in Sources */,
 				B30E02D61E55EC220009B56E /* AppDelegate.m in Sources */,
+				C9EE47CD1E92659800DEA648 /* FMResultSet.m in Sources */,
 				B3F8C0051E5F39D200FE46AA /* FilterChooseView.m in Sources */,
 				C94E39301E8EC6C800F7F066 /* PlayViewController.m in Sources */,
 				C94E38F61E8D6C1800F7F066 /* YJDiscoverViewController.m in Sources */,
+				C9EE47D91E928D1C00DEA648 /* YJPersonViewController.m in Sources */,
 				C94E39221E8EA14300F7F066 /* HomeTableViewController.m in Sources */,
 				C94E392A1E8EA61100F7F066 /* YJVideoModel.m in Sources */,
+				C9EE479C1E924FF600DEA648 /* EHSocialShareViewModel.m in Sources */,
 				C94E392D1E8EBFB500F7F066 /* DetailViewController.m in Sources */,
+				C9EE47CA1E92659800DEA648 /* FMDatabaseAdditions.m in Sources */,
 				B30E02D31E55EC220009B56E /* main.m in Sources */,
+				C9EE47CC1E92659800DEA648 /* FMDatabaseQueue.m in Sources */,
+				C9EE47CB1E92659800DEA648 /* FMDatabasePool.m in Sources */,
 				B3FE74E81E58C1D3009CBBDA /* HomeViewController.m in Sources */,
 				C94E391F1E8D708100F7F066 /* YJTabbarController.m in Sources */,
 			);
