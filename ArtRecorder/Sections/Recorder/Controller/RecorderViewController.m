@@ -33,6 +33,8 @@
 
 @property (nonatomic,strong)UIAlertView *shareAlertView;
 // Switching between front and back cameras
+@property (nonatomic,strong) NSString *faceUIString;
+
 @end
 
 @implementation RecorderViewController
@@ -53,12 +55,7 @@
     self.camera.horizontallyMirrorFrontFacingCamera = NO;
     self.camera.horizontallyMirrorRearFacingCamera = NO;
     self.camera.delegate = self;
-//    if (self.filter) {
-//        [self.camera addTarget:_filter];
-//        [_filter addTarget:_filterView];
-//    }else{
-//        [self.camera addTarget:_filterView];
-//    }
+
     _filter = [[GPUImageFilter alloc] init];
     [self.camera addTarget:_filter];
     
@@ -435,10 +432,28 @@
     if (!_elementView) {
         _elementView = [[UIView alloc] initWithFrame:self.view.frame];
         _capImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 160)];
-        [_capImageView setImage:[UIImage imageNamed:@"fire.png"]];
+        [_capImageView setImage:[UIImage imageNamed:_faceUIString]];
         [_elementView addSubview:_capImageView];
     }
     return _elementView;
+}
+- (IBAction)hornClick:(id)sender {
+    _faceUIString = @"horn.png";
+    [_capImageView setImage:[UIImage imageNamed:_faceUIString]];
+}
+
+- (IBAction)wingClick:(id)sender {
+    _faceUIString = @"wing.png";
+    [_capImageView setImage:[UIImage imageNamed:_faceUIString]];
+}
+
+- (IBAction)deer:(id)sender {
+    _faceUIString = @"deer.png";
+    [_capImageView setImage:[UIImage imageNamed:_faceUIString]];
+}
+- (IBAction)fire:(id)sender {
+    _faceUIString = @"fire.png";
+    [_capImageView setImage:[UIImage imageNamed:_faceUIString]];
 }
 
 
