@@ -110,6 +110,7 @@
 		C9EE47D41E9288C000DEA648 /* Star 1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47D01E9288C000DEA648 /* Star 1@3x.png */; };
 		C9EE47D51E9288C000DEA648 /* Star 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47D11E9288C000DEA648 /* Star 2@2x.png */; };
 		C9EE47D61E9288C000DEA648 /* Star 2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47D21E9288C000DEA648 /* Star 2@3x.png */; };
+		C9EE47D91E928D1C00DEA648 /* YJPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE47D81E928D1C00DEA648 /* YJPersonViewController.m */; };
 		EE3B50300BD5E1948DCF74A0 /* libPods-ArtRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */; };
 /* End PBXBuildFile section */
 
@@ -278,6 +279,8 @@
 		C9EE47D01E9288C000DEA648 /* Star 1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star 1@3x.png"; sourceTree = "<group>"; };
 		C9EE47D11E9288C000DEA648 /* Star 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star 2@2x.png"; sourceTree = "<group>"; };
 		C9EE47D21E9288C000DEA648 /* Star 2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star 2@3x.png"; sourceTree = "<group>"; };
+		C9EE47D71E928D1C00DEA648 /* YJPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJPersonViewController.h; sourceTree = "<group>"; };
+		C9EE47D81E928D1C00DEA648 /* YJPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJPersonViewController.m; sourceTree = "<group>"; };
 		D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArtRecorder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -681,6 +684,8 @@
 		C94E38F81E8D6C3F00F7F066 /* Person */ = {
 			isa = PBXGroup;
 			children = (
+				C9EE47D71E928D1C00DEA648 /* YJPersonViewController.h */,
+				C9EE47D81E928D1C00DEA648 /* YJPersonViewController.m */,
 			);
 			name = Person;
 			sourceTree = "<group>";
@@ -974,6 +979,7 @@
 				B3F8C0051E5F39D200FE46AA /* FilterChooseView.m in Sources */,
 				C94E39301E8EC6C800F7F066 /* PlayViewController.m in Sources */,
 				C94E38F61E8D6C1800F7F066 /* YJDiscoverViewController.m in Sources */,
+				C9EE47D91E928D1C00DEA648 /* YJPersonViewController.m in Sources */,
 				C94E39221E8EA14300F7F066 /* HomeTableViewController.m in Sources */,
 				C94E392A1E8EA61100F7F066 /* YJVideoModel.m in Sources */,
 				C9EE479C1E924FF600DEA648 /* EHSocialShareViewModel.m in Sources */,

@@ -16,7 +16,7 @@
 
 @property(nonatomic,copy) NSString * feed;
 
-@property(nonatomic,copy) NSString * description;
+@property(nonatomic,copy) NSString * desc;
 
 @property(nonatomic,copy) NSString * blurred;
 

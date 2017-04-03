@@ -11,7 +11,8 @@
 #import "PlayViewController.h"
 
 @interface DetailViewController ()
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *collectionBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *saveBtn;
 
 @property(nonatomic,strong) YJVideoModel *videoModel;
 
@@ -28,8 +29,8 @@
     self.desc.text = self.descs;
     
     _videoModel =  [[YJVideoModel alloc]init];
-    _videoModel.title= self.title;
-    _videoModel.description = self.description;
+    _videoModel.title= self.titletext;
+    _videoModel.desc = self.descs;
     _videoModel.playUrl = self.playUrl;
     _videoModel.feed = self.feed;
     _videoModel.blurred = self.blurred;
@@ -41,11 +42,12 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (IBAction)collectClick:(id)sender {
+- (IBAction)saveClick:(id)sender {
     
     [_videoModel save];
     
 }
+
 
 
 @end

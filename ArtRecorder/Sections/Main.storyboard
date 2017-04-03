@@ -141,16 +141,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Star 1.png"/>
                                 <state key="selected" image="Star 2.png"/>
+                                <connections>
+                                    <action selector="saveClick:" destination="iXa-U8-Esg" eventType="touchUpInside" id="MGF-OO-k09"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <action selector="collectClick:" destination="iXa-U8-Esg" id="u6C-Qn-Dlt"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="collectionBtn" destination="JMN-3J-eXR" id="oJD-2k-S1b"/>
                         <outlet property="desc" destination="CK5-fB-cKR" id="uY3-dh-9g1"/>
                         <outlet property="imgV" destination="eBt-Um-EXX" id="7mr-ee-NCh"/>
+                        <outlet property="saveBtn" destination="MEf-1d-xNb" id="qhW-qq-bQV"/>
                         <outlet property="titleLabel" destination="fMe-Av-EqP" id="b9q-Ex-hli"/>
                     </connections>
                 </viewController>
@@ -255,7 +255,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="smL-Kb-War" kind="relationship" relationship="rootViewController" id="pul-Sa-cBN"/>
+                        <segue destination="5be-O4-AOI" kind="relationship" relationship="rootViewController" id="Ufy-Cm-wIL"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ta2-Ex-Gv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -310,34 +310,34 @@
             </objects>
             <point key="canvasLocation" x="18" y="331"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="30F-8p-3ZJ">
+        <!--我的收藏-->
+        <scene sceneID="huR-Zk-4KL">
             <objects>
-                <tableViewController id="smL-Kb-War" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Xu4-vm-uGm">
+                <tableViewController id="5be-O4-AOI" customClass="YJPersonViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="EbV-1A-krT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="y5W-pA-Ta5">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NJR-qv-3hd">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y5W-pA-Ta5" id="nhe-w7-YOf">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NJR-qv-3hd" id="z3S-Bz-H8L">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="smL-Kb-War" id="XRe-hT-RvA"/>
-                            <outlet property="delegate" destination="smL-Kb-War" id="eic-aF-jMd"/>
+                            <outlet property="dataSource" destination="5be-O4-AOI" id="doA-q8-iwO"/>
+                            <outlet property="delegate" destination="5be-O4-AOI" id="Iwx-eZ-8M9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="wCh-X0-WBT"/>
+                    <navigationItem key="navigationItem" title="我的收藏" id="oNv-Cv-QVU"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wdw-Hf-Jbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ej-dt-vIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="769" y="331"/>
+            <point key="canvasLocation" x="788" y="341"/>
         </scene>
     </scenes>
     <resources>
