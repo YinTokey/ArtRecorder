@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "YJVideoModel.h"
+
 @interface DetailViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *desc;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -20,5 +22,7 @@
 @property(nonatomic,copy) NSString * titletext;
 
 @property(nonatomic,copy) NSString * feed;
+
+@property(nonatomic,copy) NSString * blurred;
 
 @end

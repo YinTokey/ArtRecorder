@@ -11,6 +11,9 @@
 #import "PlayViewController.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *collectionBtn;
+
+@property(nonatomic,strong) YJVideoModel *videoModel;
 
 @end
 
@@ -24,6 +27,12 @@
     [self.imgV sd_setImageWithURL:[NSURL URLWithString:self.feed]];
     self.desc.text = self.descs;
     
+    _videoModel =  [[YJVideoModel alloc]init];
+    _videoModel.title= self.title;
+    _videoModel.description = self.description;
+    _videoModel.playUrl = self.playUrl;
+    _videoModel.feed = self.feed;
+    _videoModel.blurred = self.blurred;
 }
 - (IBAction)playClick:(id)sender {
     
@@ -32,6 +41,11 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (IBAction)collectClick:(id)sender {
+    
+    [_videoModel save];
+    
+}
 
 
 @end

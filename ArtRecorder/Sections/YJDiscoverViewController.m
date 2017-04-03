@@ -70,7 +70,7 @@
     vc.descs = [dic objectForKey:@"description"];
     vc.titletext = [dic objectForKey:@"title"];
     vc.feed = [dic objectForKey:@"feed"];
-    
+    vc.blurred = [dic objectForKey: @"blurred"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

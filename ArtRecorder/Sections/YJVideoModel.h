@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface YJVideoModel : NSObject
+#import "JKDBModel.h"
+@interface YJVideoModel : JKDBModel
 
 @property(nonatomic,copy) NSString * title;
 

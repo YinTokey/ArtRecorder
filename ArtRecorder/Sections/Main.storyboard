@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,6 +26,22 @@
             </objects>
             <point key="canvasLocation" x="-1746" y="-333"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SO9-wD-3mw">
+            <objects>
+                <navigationController id="1KG-cq-Wzu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mAH-LE-R4R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iXa-U8-Esg" kind="relationship" relationship="rootViewController" id="gy5-kV-e5R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8K-14-yXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1746" y="1016"/>
+        </scene>
         <!--首页推荐-->
         <scene sceneID="pbB-ls-dEd">
             <objects>
@@ -39,7 +55,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PzY-zC-xfe" id="QOS-bt-WYh">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -118,7 +134,21 @@
                             <constraint firstItem="CK5-fB-cKR" firstAttribute="top" secondItem="fMe-Av-EqP" secondAttribute="bottom" constant="21" id="hvb-u0-0jU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aNZ-8T-HYT">
+                        <barButtonItem key="rightBarButtonItem" image="Star 1.png" style="plain" id="JMN-3J-eXR">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MEf-1d-xNb">
+                                <rect key="frame" x="321" y="4" width="38" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Star 1.png"/>
+                                <state key="selected" image="Star 2.png"/>
+                            </button>
+                            <connections>
+                                <action selector="collectClick:" destination="iXa-U8-Esg" id="u6C-Qn-Dlt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="collectionBtn" destination="JMN-3J-eXR" id="oJD-2k-S1b"/>
                         <outlet property="desc" destination="CK5-fB-cKR" id="uY3-dh-9g1"/>
                         <outlet property="imgV" destination="eBt-Um-EXX" id="7mr-ee-NCh"/>
                         <outlet property="titleLabel" destination="fMe-Av-EqP" id="b9q-Ex-hli"/>
@@ -126,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9c-TQ-PiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1698.4000000000001" y="1052.9235382308846"/>
+            <point key="canvasLocation" x="-1743" y="1668"/>
         </scene>
         <!--Play View Controller-->
         <scene sceneID="Jv5-Qq-SLc">
@@ -159,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLI-5l-oZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-957.60000000000002" y="1037.6311844077961"/>
+            <point key="canvasLocation" x="-471" y="1613"/>
         </scene>
         <!--Tabbar Controller-->
         <scene sceneID="gft-1X-FGb">
@@ -245,7 +275,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iP1-Gr-DVq" id="7bI-uj-ouZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -293,7 +323,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y5W-pA-Ta5" id="nhe-w7-YOf">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -311,6 +341,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Star 1.png" width="28" height="27"/>
+        <image name="Star 2.png" width="28" height="27"/>
         <image name="Triangle.png" width="43" height="43"/>
         <image name="icon1.png" width="22" height="20"/>
         <image name="icon2.png" width="22" height="22"/>
