@@ -36,10 +36,13 @@
     _videoModel.blurred = self.blurred;
 }
 - (IBAction)playClick:(id)sender {
-    
+
     PlayViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"playVC"];
     vc.playUrl= self.playUrl;
     [self.navigationController pushViewController:vc animated:YES];
+    
+    
+    
 }
 
 - (IBAction)saveClick:(id)sender {
