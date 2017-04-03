@@ -29,6 +29,8 @@
 //风景滤镜模式
 @property (nonatomic,assign) BOOL filterMode;
 
+@property (nonatomic,strong)UIAlertView *shareAlertView;
+
 // Switching between front and back cameras
 @end
 
@@ -87,6 +89,9 @@
     [self setupChooseView];
     
     _filterMode = NO;
+    
+    _shareAlertView = [[UIAlertView alloc] initWithTitle:@"是否分享" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"分享", nil];
+    _shareAlertView.tag = 1;
 
 }
 
@@ -165,6 +170,9 @@
         [self.writer finishRecording];
         UIAlertView * alertview = [[UIAlertView alloc] initWithTitle:@"是否保存到相册" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"保存", nil];
         [alertview show];
+        alertview.tag = 0;
+        
+        
         
         //停止计时器
         if (self.timer) {
@@ -202,10 +210,22 @@
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    if (buttonIndex == 1) {
-        NSLog(@"baocun");
-        [self save_to_photosAlbum:pathToMovie];
+    
+    if(alertView.tag == 0){
+        if (buttonIndex == 1) {
+            NSLog(@"baocun");
+            [self save_to_photosAlbum:pathToMovie];
+        }
+        [_shareAlertView show];
     }
+    if(alertView.tag == 1){
+    
+        if(buttonIndex == 1){
+            NSLog(@"社交分享");
+        }
+    }
+    
+    
 }
 -(void)save_to_photosAlbum:(NSString *)path
 {

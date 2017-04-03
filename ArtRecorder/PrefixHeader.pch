@@ -23,5 +23,7 @@
 #import "GPUImage.h"
 #import <MJExtension.h>
 #import "UIImageView+WebCache.h"
+#import <OpenShareHeader.h>
+
 
 #endif /* PrefixHeader_pch */

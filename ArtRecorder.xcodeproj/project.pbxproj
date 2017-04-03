@@ -1025,6 +1025,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ArtRecorder/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = ArtRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YinjianChen.ArtRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1046,6 +1047,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ArtRecorder/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = ArtRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YinjianChen.ArtRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";

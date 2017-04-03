@@ -32,6 +32,10 @@
 
     [Bmob registerWithAppKey:@"e76bed42f95c1eea693e093bdeca3182"];
     
+    [OpenShare connectQQWithAppId:@"1103194207"];
+    [OpenShare connectWeiboWithAppKey:@"402180334"];
+    [OpenShare connectWeixinWithAppId:@"wxd930ea5d5a258f4f"];
+    
     return YES;
 }
 

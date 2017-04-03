@@ -3,6 +3,7 @@ PODS:
   - GPUImage (0.1.7)
   - Masonry (1.0.2)
   - MJExtension (3.0.13)
+  - OpenShare (0.0.1)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - GPUImage
   - Masonry
   - MJExtension
+  - OpenShare (= 0.0.1)
   - ReactiveCocoa (= 2.5)
   - SCRecorder
   - SDWebImage
@@ -29,10 +31,11 @@ SPEC CHECKSUMS:
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  OpenShare: a560580dbb729d5c0c3cc1ee84cd6aa4a07e94c6
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SCRecorder: bbb521dbc222908876ec9cd9156bbc8a893bed44
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: 09e79022ef9fd6a6d4d7d7ed948e30b17630299a
+PODFILE CHECKSUM: c4e21ffab915d6f5213317fc164d5777895a0b62
 
 COCOAPODS: 1.1.1

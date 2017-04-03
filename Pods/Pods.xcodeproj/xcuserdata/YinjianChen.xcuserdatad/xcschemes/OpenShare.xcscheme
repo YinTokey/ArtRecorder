@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CB3A5C397B7FDC17A4E9CD3B31DCAC34'
-               BlueprintName = 'Pods-ArtRecorder'
+               BlueprintIdentifier = 'B5E289E0A32AE19BC4BE45CA79E10436'
+               BlueprintName = 'OpenShare'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-ArtRecorder.a'>
+               BuildableName = 'libOpenShare.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
