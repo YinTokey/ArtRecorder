@@ -83,6 +83,7 @@
 		C94FC0D31E65D88200105C9F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0D21E65D88200105C9F /* AudioToolbox.framework */; };
 		C94FC0D51E65D89600105C9F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0D41E65D89600105C9F /* CoreMotion.framework */; };
 		C94FC0D71E65D8E800105C9F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0D61E65D8E800105C9F /* SystemConfiguration.framework */; };
+		C984FB2F1E9544DA008A3510 /* ZhihuListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C984FB2E1E9544DA008A3510 /* ZhihuListModel.m */; };
 		C99224B81E6711A700967818 /* FilterArray.m in Sources */ = {isa = PBXBuildFile; fileRef = C99224B71E6711A700967818 /* FilterArray.m */; };
 		C9EC74551E86DBB300F02D3A /* deer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC74541E86DBB300F02D3A /* deer@2x.png */; };
 		C9EC745C1E86DD3700F02D3A /* fire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC74561E86DD3700F02D3A /* fire@2x.png */; };
@@ -111,6 +112,7 @@
 		C9EE47D51E9288C000DEA648 /* Star 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47D11E9288C000DEA648 /* Star 2@2x.png */; };
 		C9EE47D61E9288C000DEA648 /* Star 2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47D21E9288C000DEA648 /* Star 2@3x.png */; };
 		C9EE47D91E928D1C00DEA648 /* YJPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE47D81E928D1C00DEA648 /* YJPersonViewController.m */; };
+		C9EE47DF1E92AF4A00DEA648 /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE47DE1E92AF4A00DEA648 /* GPUImageBeautifyFilter.m */; };
 		EE3B50300BD5E1948DCF74A0 /* libPods-ArtRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */; };
 /* End PBXBuildFile section */
 
@@ -222,8 +224,8 @@
 		C94E39101E8D6FBA00F7F066 /* icon4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon4@3x.png"; sourceTree = "<group>"; };
 		C94E391D1E8D708100F7F066 /* YJTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTabbarController.h; sourceTree = "<group>"; };
 		C94E391E1E8D708100F7F066 /* YJTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTabbarController.m; sourceTree = "<group>"; };
-		C94E39201E8EA14300F7F066 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
-		C94E39211E8EA14300F7F066 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		C94E39201E8EA14300F7F066 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeTableViewController.h; path = "/Users/yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/Sections/HomeTableViewController.h"; sourceTree = "<absolute>"; };
+		C94E39211E8EA14300F7F066 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeTableViewController.m; path = "/Users/yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/Sections/HomeTableViewController.m"; sourceTree = "<absolute>"; };
 		C94E39231E8EA28B00F7F066 /* YJVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJVideoCell.h; sourceTree = "<group>"; };
 		C94E39241E8EA28B00F7F066 /* YJVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJVideoCell.m; sourceTree = "<group>"; };
 		C94E39251E8EA28B00F7F066 /* YJVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YJVideoCell.xib; sourceTree = "<group>"; };
@@ -242,6 +244,8 @@
 		C94FC0D21E65D88200105C9F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C94FC0D41E65D89600105C9F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		C94FC0D61E65D8E800105C9F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C984FB2D1E9544DA008A3510 /* ZhihuListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhihuListModel.h; sourceTree = "<group>"; };
+		C984FB2E1E9544DA008A3510 /* ZhihuListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhihuListModel.m; sourceTree = "<group>"; };
 		C99224B61E6711A700967818 /* FilterArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterArray.h; sourceTree = "<group>"; };
 		C99224B71E6711A700967818 /* FilterArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterArray.m; sourceTree = "<group>"; };
 		C9EC74541E86DBB300F02D3A /* deer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deer@2x.png"; sourceTree = "<group>"; };
@@ -281,6 +285,8 @@
 		C9EE47D21E9288C000DEA648 /* Star 2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star 2@3x.png"; sourceTree = "<group>"; };
 		C9EE47D71E928D1C00DEA648 /* YJPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJPersonViewController.h; sourceTree = "<group>"; };
 		C9EE47D81E928D1C00DEA648 /* YJPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJPersonViewController.m; sourceTree = "<group>"; };
+		C9EE47DD1E92AF4A00DEA648 /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		C9EE47DE1E92AF4A00DEA648 /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
 		D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArtRecorder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -437,8 +443,6 @@
 				C94E39031E8D6DC600F7F066 /* Main.storyboard */,
 				C94E391D1E8D708100F7F066 /* YJTabbarController.h */,
 				C94E391E1E8D708100F7F066 /* YJTabbarController.m */,
-				C94E39201E8EA14300F7F066 /* HomeTableViewController.h */,
-				C94E39211E8EA14300F7F066 /* HomeTableViewController.m */,
 			);
 			name = Sections;
 			path = "../../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/Sections";
@@ -447,8 +451,12 @@
 		B3FE74D61E57548C009CBBDA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C94E39201E8EA14300F7F066 /* HomeTableViewController.h */,
+				C94E39211E8EA14300F7F066 /* HomeTableViewController.m */,
 				B3FE74E61E58C1D3009CBBDA /* HomeViewController.h */,
 				B3FE74E71E58C1D3009CBBDA /* HomeViewController.m */,
+				C984FB2D1E9544DA008A3510 /* ZhihuListModel.h */,
+				C984FB2E1E9544DA008A3510 /* ZhihuListModel.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -590,6 +598,8 @@
 		C9077BBC1E69C1F8009D4615 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C9EE47DD1E92AF4A00DEA648 /* GPUImageBeautifyFilter.h */,
+				C9EE47DE1E92AF4A00DEA648 /* GPUImageBeautifyFilter.m */,
 				C9EE47B51E92659800DEA648 /* DBModel */,
 				C9EE47BA1E92659800DEA648 /* fmdb */,
 				C9EE479A1E924FF600DEA648 /* EHSocialShareViewModel.h */,
@@ -970,12 +980,14 @@
 				C99224B81E6711A700967818 /* FilterArray.m in Sources */,
 				B3FE74F31E598916009CBBDA /* RecorderViewController.m in Sources */,
 				C9EE47C71E92659800DEA648 /* JKDBHelper.m in Sources */,
+				C984FB2F1E9544DA008A3510 /* ZhihuListModel.m in Sources */,
 				C9EE47C91E92659800DEA648 /* FMDatabase.m in Sources */,
 				B3FE74EF1E58CC66009CBBDA /* VideoViewController.m in Sources */,
 				C9EE47C81E92659800DEA648 /* JKDBModel.m in Sources */,
 				C94E39261E8EA28B00F7F066 /* YJVideoCell.m in Sources */,
 				B30E02D61E55EC220009B56E /* AppDelegate.m in Sources */,
 				C9EE47CD1E92659800DEA648 /* FMResultSet.m in Sources */,
+				C9EE47DF1E92AF4A00DEA648 /* GPUImageBeautifyFilter.m in Sources */,
 				B3F8C0051E5F39D200FE46AA /* FilterChooseView.m in Sources */,
 				C94E39301E8EC6C800F7F066 /* PlayViewController.m in Sources */,
 				C94E38F61E8D6C1800F7F066 /* YJDiscoverViewController.m in Sources */,

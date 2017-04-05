@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - BmobSDK (2.0.7)
   - GPUImage (0.1.7)
   - Masonry (1.0.2)
@@ -17,6 +32,7 @@ PODS:
   - SDWebImage/Core (3.8.2)
 
 DEPENDENCIES:
+  - AFNetworking
   - BmobSDK
   - GPUImage
   - Masonry
@@ -27,6 +43,7 @@ DEPENDENCIES:
   - SDWebImage
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BmobSDK: 858fe86a3600d2dda7ad549ff8f22458d4d1093d
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
@@ -36,6 +53,6 @@ SPEC CHECKSUMS:
   SCRecorder: bbb521dbc222908876ec9cd9156bbc8a893bed44
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: c4e21ffab915d6f5213317fc164d5777895a0b62
+PODFILE CHECKSUM: 1217d53d73d48177c29522f7ddc42932b06094b2
 
 COCOAPODS: 1.1.1

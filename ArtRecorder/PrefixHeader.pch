@@ -24,6 +24,6 @@
 #import <MJExtension.h>
 #import "UIImageView+WebCache.h"
 #import <OpenShareHeader.h>
-
+#import <AFNetworking.h>
 
 #endif /* PrefixHeader_pch */

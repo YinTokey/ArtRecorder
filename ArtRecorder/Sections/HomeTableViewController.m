@@ -10,8 +10,12 @@
 #import <Bmob.h>
 #import "YJVideoCell.h"
 #import "DetailViewController.h"
+#import "ZhihuListModel.h"
 @interface HomeTableViewController ()
 @property(nonatomic ,strong) NSMutableArray *datasourceDics;
+
+@property(nonatomic ,strong) NSMutableArray *zhihuListArray;
+
 @end
 
 @implementation HomeTableViewController
@@ -22,6 +26,7 @@
     self.tableView.rowHeight = 232;
     
     self.datasourceDics = [NSMutableArray array];
+    self.zhihuListArray = [NSMutableArray array];
     
     BmobQuery   *bquery = [BmobQuery queryWithClassName:@"home"];
     //查找GameScore表的数据
@@ -40,6 +45,18 @@
         [self.tableView reloadData];
     }];
 
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:@"https://news-at.zhihu.com/api/7/theme/3" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+       
+        NSArray *tmpArray = [responseObject objectForKey:@"stories"];
+        self.zhihuListArray =  [ZhihuListModel mj_objectArrayWithKeyValuesArray:tmpArray];
+
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

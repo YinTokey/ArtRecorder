@@ -9,4 +9,5 @@ pod 'BmobSDK'
 pod 'MJExtension'
 pod 'SDWebImage'
 pod 'OpenShare', '0.0.1'
+pod 'AFNetworking'
 end
