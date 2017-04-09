@@ -11,10 +11,13 @@
 #import "YJVideoCell.h"
 #import "DetailViewController.h"
 #import "ZhihuListModel.h"
-@interface HomeTableViewController ()
+#import "XRCarouselView.h"
+
+@interface HomeTableViewController ()<XRCarouselViewDelegate>
 @property(nonatomic ,strong) NSMutableArray *datasourceDics;
 
 @property(nonatomic ,strong) NSMutableArray *zhihuListArray;
+@property (nonatomic, strong) XRCarouselView *carouselView;
 
 @end
 
@@ -52,12 +55,48 @@
        
         NSArray *tmpArray = [responseObject objectForKey:@"stories"];
         self.zhihuListArray =  [ZhihuListModel mj_objectArrayWithKeyValuesArray:tmpArray];
-
+        [self setupHeaderView];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
     }];
     
 }
+
+
+- (void)setupHeaderView{
+    
+    ZhihuListModel *model1= [_zhihuListArray objectAtIndex:3];
+    ZhihuListModel *model2= [_zhihuListArray objectAtIndex:4];
+    ZhihuListModel *model3= [_zhihuListArray objectAtIndex:5];
+    ZhihuListModel *model4= [_zhihuListArray objectAtIndex:6];
+    
+    NSArray *arr = @[[model1.images firstObject],
+                     [model2.images firstObject],
+                     [model3.images firstObject],
+                     [model4.images firstObject]
+                     
+                     ];
+    
+    
+    NSArray *describeArray = @[model1.title,model2.title,model3.title,model4.title];
+
+    self.carouselView = [[XRCarouselView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 180)];
+
+    _carouselView.imageArray = arr;
+    _carouselView.describeArray = describeArray;
+    
+    //用代理处理图片点击
+    _carouselView.delegate = self;
+    
+    //设置每张图片的停留时间，默认值为5s，最少为2s
+    _carouselView.time = 2;
+
+    UIFont *font = [UIFont systemFontOfSize:20];
+    [_carouselView setDescribeTextColor:nil font:font bgColor:nil];
+    
+    self.tableView.tableHeaderView = _carouselView;
+}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _datasourceDics.count;
