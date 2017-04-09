@@ -19,6 +19,10 @@
 @property(nonatomic ,strong) NSMutableArray *zhihuListArray;
 @property (nonatomic, strong) XRCarouselView *carouselView;
 
+@property(nonatomic ,strong) NSArray *imagesArray;
+@property(nonatomic ,strong) NSArray *decArray;
+
+
 @end
 
 @implementation HomeTableViewController
@@ -30,6 +34,8 @@
     
     self.datasourceDics = [NSMutableArray array];
     self.zhihuListArray = [NSMutableArray array];
+    self.imagesArray = [NSArray array];
+    self.decArray = [NSArray array];
     
     BmobQuery   *bquery = [BmobQuery queryWithClassName:@"home"];
     //查找GameScore表的数据
@@ -70,7 +76,7 @@
     ZhihuListModel *model3= [_zhihuListArray objectAtIndex:5];
     ZhihuListModel *model4= [_zhihuListArray objectAtIndex:6];
     
-    NSArray *arr = @[[model1.images firstObject],
+    self.imagesArray = @[[model1.images firstObject],
                      [model2.images firstObject],
                      [model3.images firstObject],
                      [model4.images firstObject]
@@ -78,12 +84,12 @@
                      ];
     
     
-    NSArray *describeArray = @[model1.title,model2.title,model3.title,model4.title];
+    self.decArray = @[model1.title,model2.title,model3.title,model4.title];
 
     self.carouselView = [[XRCarouselView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 180)];
 
-    _carouselView.imageArray = arr;
-    _carouselView.describeArray = describeArray;
+    _carouselView.imageArray = _imagesArray;
+    _carouselView.describeArray = _decArray;
     
     //用代理处理图片点击
     _carouselView.delegate = self;
@@ -124,5 +130,12 @@
     
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+- (void)carouselView:(XRCarouselView *)carouselView clickImageAtIndex:(NSInteger)index{
+    
+    
+    NSLog(@"%zd",index);
+}
+
 
 @end
