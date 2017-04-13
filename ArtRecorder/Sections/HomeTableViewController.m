@@ -12,8 +12,10 @@
 #import "DetailViewController.h"
 #import "ZhihuListModel.h"
 #import "XRCarouselView.h"
+#import "buttonCell.h"
 
-@interface HomeTableViewController ()<XRCarouselViewDelegate>
+
+@interface HomeTableViewController ()<XRCarouselViewDelegate,buttonCellDelegate>
 @property(nonatomic ,strong) NSMutableArray *datasourceDics;
 
 @property(nonatomic ,strong) NSMutableArray *zhihuListArray;
@@ -29,8 +31,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.tableView.rowHeight = 232;
     
     self.datasourceDics = [NSMutableArray array];
     self.zhihuListArray = [NSMutableArray array];
@@ -103,32 +103,55 @@
     self.tableView.tableHeaderView = _carouselView;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(indexPath.section == 0){
+        return 76;
+    }else{
+        return 232;
+    }
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+
+  return 2;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _datasourceDics.count;
+    if(section == 0){
+        return 1;
+    }else{
+        return _datasourceDics.count;
+    }
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    YJVideoCell *cell = [YJVideoCell CellWithTableView:tableView];
-    NSDictionary *dic = [self.datasourceDics objectAtIndex:indexPath.row];
-    [cell setupWithDic:dic];
+    if(indexPath.section == 0){
+        buttonCell *cell = [buttonCell CellWithTableView:tableView];
+        cell.delegate = self;
+        return cell ;
+    }else{
+        YJVideoCell *cell = [YJVideoCell CellWithTableView:tableView];
+        NSDictionary *dic = [self.datasourceDics objectAtIndex:indexPath.row];
+        [cell setupWithDic:dic];
+        return cell;
+    }
     
-    
-    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    DetailViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"detailVC"];
-    NSDictionary *dic = [self.datasourceDics objectAtIndex:indexPath.row];
-    
-    vc.playUrl = [dic objectForKey:@"playUrl"];
-    vc.descs = [dic objectForKey:@"description"];
-    vc.titletext = [dic objectForKey:@"title"];
-    vc.feed = [dic objectForKey:@"feed"];
-    
-    [self.navigationController pushViewController:vc animated:YES];
+    if(indexPath.section == 1){
+        DetailViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"detailVC"];
+        NSDictionary *dic = [self.datasourceDics objectAtIndex:indexPath.row];
+        
+        vc.playUrl = [dic objectForKey:@"playUrl"];
+        vc.descs = [dic objectForKey:@"description"];
+        vc.titletext = [dic objectForKey:@"title"];
+        vc.feed = [dic objectForKey:@"feed"];
+        
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (void)carouselView:(XRCarouselView *)carouselView clickImageAtIndex:(NSInteger)index{
@@ -137,5 +160,12 @@
     NSLog(@"%zd",index);
 }
 
+- (void)ClickNoti{
+    NSLog(@"clickNoti");
+}
+
+- (void)ClickZhuanti{
+    NSLog(@"clickzhuanti");
+}
 
 @end

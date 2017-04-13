@@ -54,6 +54,7 @@
         [self.navigationController pushViewController:videoVC animated:NO];
     }];
     
+    openBtn.hidden = YES;
 }
 
 

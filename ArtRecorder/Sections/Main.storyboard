@@ -158,6 +158,93 @@
             </objects>
             <point key="canvasLocation" x="-1743" y="1668"/>
         </scene>
+        <!--Zhuanti View Controller-->
+        <scene sceneID="3O2-ZQ-7pU">
+            <objects>
+                <viewController id="xtP-t6-Otw" customClass="ZhuantiViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eT1-9V-K7Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="Da2-VX-6TA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ruo-Sb-KzE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6A-t6-Nc1">
+                                <rect key="frame" x="16" y="96" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.065213896330000007" green="0.59234637020000003" blue="0.94948929550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Afe-y4-Vcz"/>
+                                    <constraint firstAttribute="height" constant="90" id="OLM-J2-zQ3"/>
+                                </constraints>
+                                <state key="normal" title="IGN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="IGN:" destination="xtP-t6-Otw" eventType="touchUpInside" id="WQH-pm-YhX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gZ-kK-VWE">
+                                <rect key="frame" x="269" y="96" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.065213896330000007" green="0.59234637020000003" blue="0.94948929550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="9dw-g4-EUK"/>
+                                    <constraint firstAttribute="height" constant="90" id="jIq-t6-tYF"/>
+                                </constraints>
+                                <state key="normal" title="纪录片">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="record:" destination="xtP-t6-Otw" eventType="touchUpInside" id="bZj-Ag-pg1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUK-3V-yzr">
+                                <rect key="frame" x="142" y="96" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.065213896330000007" green="0.59234637020000003" blue="0.94948929550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="CXW-Ru-umN"/>
+                                    <constraint firstAttribute="height" constant="90" id="Gp5-84-Tmm"/>
+                                </constraints>
+                                <state key="normal" title="谷阿莫">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guamo:" destination="xtP-t6-Otw" eventType="touchUpInside" id="pDe-1q-p47"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2gZ-kK-VWE" firstAttribute="leading" secondItem="AUK-3V-yzr" secondAttribute="trailing" constant="37" id="6Uk-Py-ZaQ"/>
+                            <constraint firstItem="AUK-3V-yzr" firstAttribute="top" secondItem="eT1-9V-K7Y" secondAttribute="bottom" constant="32" id="BNc-tj-5xj"/>
+                            <constraint firstItem="AUK-3V-yzr" firstAttribute="centerX" secondItem="Ruo-Sb-KzE" secondAttribute="centerX" id="GeK-Th-la1"/>
+                            <constraint firstItem="AUK-3V-yzr" firstAttribute="leading" secondItem="I6A-t6-Nc1" secondAttribute="trailing" constant="36" id="Tdd-gh-Erh"/>
+                            <constraint firstItem="I6A-t6-Nc1" firstAttribute="top" secondItem="eT1-9V-K7Y" secondAttribute="bottom" constant="32" id="d9Y-x1-gOy"/>
+                            <constraint firstItem="2gZ-kK-VWE" firstAttribute="top" secondItem="eT1-9V-K7Y" secondAttribute="bottom" constant="32" id="v0S-Xq-aPg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SLs-ue-zjg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PRy-7e-VnT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1834.4000000000001" y="2849.3253373313346"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T0x-at-RR6">
+            <objects>
+                <navigationController id="XJT-U8-1GP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A5c-ew-vId">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xtP-t6-Otw" kind="relationship" relationship="rootViewController" id="AmL-sS-RCd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5k-wn-g0R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1833" y="2192"/>
+        </scene>
         <!--Play View Controller-->
         <scene sceneID="Jv5-Qq-SLc">
             <objects>
@@ -202,7 +289,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="e2Y-Dt-LoU" kind="relationship" relationship="viewControllers" id="Jpf-1i-hyd"/>
-                        <segue destination="P9b-dE-SBY" kind="relationship" relationship="viewControllers" id="H41-0f-25A"/>
                         <segue destination="y0Z-I9-VhQ" kind="relationship" relationship="viewControllers" id="OKf-wR-H3o"/>
                         <segue destination="R6T-Jf-aaG" kind="relationship" relationship="viewControllers" id="hc3-Zk-Qbg"/>
                     </connections>
