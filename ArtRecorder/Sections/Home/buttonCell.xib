@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ga-Wk-1FX">
-                        <rect key="frame" x="0.0" y="0.0" width="160" height="76"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
                         <color key="backgroundColor" red="0.065213896330000007" green="0.59234637020000003" blue="0.94948929550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <state key="normal" title="专题">
                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -30,8 +29,11 @@
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gL3-Sk-jqx">
-                        <rect key="frame" x="160" y="0.0" width="160" height="75"/>
+                        <rect key="frame" x="320" y="0.0" width="0.0" height="75"/>
                         <color key="backgroundColor" red="0.34898546006944442" green="0.85411241319444442" blue="0.38823784722222221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" id="7hG-eg-CJH"/>
+                        </constraints>
                         <state key="normal" title="通知">
                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
@@ -41,14 +43,13 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="3Ga-Wk-1FX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3uf-rR-K6a"/>
-                    <constraint firstItem="gL3-Sk-jqx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9U7-bF-agF"/>
-                    <constraint firstItem="3Ga-Wk-1FX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IeG-8k-hqd"/>
-                    <constraint firstAttribute="bottom" secondItem="3Ga-Wk-1FX" secondAttribute="bottom" constant="-0.5" id="ODx-bR-0pr"/>
-                    <constraint firstAttribute="bottom" secondItem="gL3-Sk-jqx" secondAttribute="bottom" id="Y8V-Ts-9xv"/>
-                    <constraint firstAttribute="trailing" secondItem="gL3-Sk-jqx" secondAttribute="trailing" id="eiU-iH-VgF"/>
-                    <constraint firstItem="gL3-Sk-jqx" firstAttribute="leading" secondItem="3Ga-Wk-1FX" secondAttribute="trailing" id="jmR-Uu-y6S"/>
-                    <constraint firstItem="3Ga-Wk-1FX" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="oZI-fb-bG0"/>
+                    <constraint firstAttribute="trailing" secondItem="gL3-Sk-jqx" secondAttribute="trailing" id="1cW-bU-1os"/>
+                    <constraint firstItem="gL3-Sk-jqx" firstAttribute="leading" secondItem="3Ga-Wk-1FX" secondAttribute="trailing" id="5nU-WN-Zdl"/>
+                    <constraint firstAttribute="bottom" secondItem="3Ga-Wk-1FX" secondAttribute="bottom" id="9aK-Mr-AIG"/>
+                    <constraint firstItem="3Ga-Wk-1FX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Bq1-Il-h9c"/>
+                    <constraint firstAttribute="bottom" secondItem="gL3-Sk-jqx" secondAttribute="bottom" id="NLO-8U-rah"/>
+                    <constraint firstItem="gL3-Sk-jqx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="P5K-GK-5Rv"/>
+                    <constraint firstItem="3Ga-Wk-1FX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zFp-2h-e2U"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
