@@ -83,6 +83,13 @@
 		C94FC0D31E65D88200105C9F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0D21E65D88200105C9F /* AudioToolbox.framework */; };
 		C94FC0D51E65D89600105C9F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0D41E65D89600105C9F /* CoreMotion.framework */; };
 		C94FC0D71E65D8E800105C9F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94FC0D61E65D8E800105C9F /* SystemConfiguration.framework */; };
+		C984FB2F1E9544DA008A3510 /* ZhihuListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C984FB2E1E9544DA008A3510 /* ZhihuListModel.m */; };
+		C984FB591E9A9FBB008A3510 /* XRCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = C984FB571E9A9FBB008A3510 /* XRCarouselView.m */; };
+		C984FB5A1E9A9FBB008A3510 /* XRPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = C984FB581E9A9FBB008A3510 /* XRPlaceholder.png */; };
+		C984FB641E9BD0DF008A3510 /* buttonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C984FB621E9BD0DF008A3510 /* buttonCell.m */; };
+		C984FB651E9BD0DF008A3510 /* buttonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C984FB631E9BD0DF008A3510 /* buttonCell.xib */; };
+		C984FB681E9FC9AE008A3510 /* ZhuantiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C984FB671E9FC9AE008A3510 /* ZhuantiViewController.m */; };
+		C984FB6B1E9FD090008A3510 /* NotiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C984FB6A1E9FD090008A3510 /* NotiViewController.m */; };
 		C99224B81E6711A700967818 /* FilterArray.m in Sources */ = {isa = PBXBuildFile; fileRef = C99224B71E6711A700967818 /* FilterArray.m */; };
 		C9EC74551E86DBB300F02D3A /* deer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC74541E86DBB300F02D3A /* deer@2x.png */; };
 		C9EC745C1E86DD3700F02D3A /* fire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC74561E86DD3700F02D3A /* fire@2x.png */; };
@@ -111,6 +118,7 @@
 		C9EE47D51E9288C000DEA648 /* Star 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47D11E9288C000DEA648 /* Star 2@2x.png */; };
 		C9EE47D61E9288C000DEA648 /* Star 2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EE47D21E9288C000DEA648 /* Star 2@3x.png */; };
 		C9EE47D91E928D1C00DEA648 /* YJPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE47D81E928D1C00DEA648 /* YJPersonViewController.m */; };
+		C9EE47DF1E92AF4A00DEA648 /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EE47DE1E92AF4A00DEA648 /* GPUImageBeautifyFilter.m */; };
 		EE3B50300BD5E1948DCF74A0 /* libPods-ArtRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */; };
 /* End PBXBuildFile section */
 
@@ -222,8 +230,8 @@
 		C94E39101E8D6FBA00F7F066 /* icon4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon4@3x.png"; sourceTree = "<group>"; };
 		C94E391D1E8D708100F7F066 /* YJTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTabbarController.h; sourceTree = "<group>"; };
 		C94E391E1E8D708100F7F066 /* YJTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTabbarController.m; sourceTree = "<group>"; };
-		C94E39201E8EA14300F7F066 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
-		C94E39211E8EA14300F7F066 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		C94E39201E8EA14300F7F066 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeTableViewController.h; path = "/Users/yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/Sections/HomeTableViewController.h"; sourceTree = "<absolute>"; };
+		C94E39211E8EA14300F7F066 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeTableViewController.m; path = "/Users/yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/Sections/HomeTableViewController.m"; sourceTree = "<absolute>"; };
 		C94E39231E8EA28B00F7F066 /* YJVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJVideoCell.h; sourceTree = "<group>"; };
 		C94E39241E8EA28B00F7F066 /* YJVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJVideoCell.m; sourceTree = "<group>"; };
 		C94E39251E8EA28B00F7F066 /* YJVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YJVideoCell.xib; sourceTree = "<group>"; };
@@ -242,6 +250,18 @@
 		C94FC0D21E65D88200105C9F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C94FC0D41E65D89600105C9F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		C94FC0D61E65D8E800105C9F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C984FB2D1E9544DA008A3510 /* ZhihuListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhihuListModel.h; sourceTree = "<group>"; };
+		C984FB2E1E9544DA008A3510 /* ZhihuListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhihuListModel.m; sourceTree = "<group>"; };
+		C984FB561E9A9FBB008A3510 /* XRCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRCarouselView.h; sourceTree = "<group>"; };
+		C984FB571E9A9FBB008A3510 /* XRCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRCarouselView.m; sourceTree = "<group>"; };
+		C984FB581E9A9FBB008A3510 /* XRPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XRPlaceholder.png; sourceTree = "<group>"; };
+		C984FB611E9BD0DF008A3510 /* buttonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buttonCell.h; sourceTree = "<group>"; };
+		C984FB621E9BD0DF008A3510 /* buttonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buttonCell.m; sourceTree = "<group>"; };
+		C984FB631E9BD0DF008A3510 /* buttonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = buttonCell.xib; sourceTree = "<group>"; };
+		C984FB661E9FC9AE008A3510 /* ZhuantiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhuantiViewController.h; sourceTree = "<group>"; };
+		C984FB671E9FC9AE008A3510 /* ZhuantiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhuantiViewController.m; sourceTree = "<group>"; };
+		C984FB691E9FD090008A3510 /* NotiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotiViewController.h; sourceTree = "<group>"; };
+		C984FB6A1E9FD090008A3510 /* NotiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotiViewController.m; sourceTree = "<group>"; };
 		C99224B61E6711A700967818 /* FilterArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterArray.h; sourceTree = "<group>"; };
 		C99224B71E6711A700967818 /* FilterArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterArray.m; sourceTree = "<group>"; };
 		C9EC74541E86DBB300F02D3A /* deer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deer@2x.png"; sourceTree = "<group>"; };
@@ -281,6 +301,8 @@
 		C9EE47D21E9288C000DEA648 /* Star 2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star 2@3x.png"; sourceTree = "<group>"; };
 		C9EE47D71E928D1C00DEA648 /* YJPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJPersonViewController.h; sourceTree = "<group>"; };
 		C9EE47D81E928D1C00DEA648 /* YJPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJPersonViewController.m; sourceTree = "<group>"; };
+		C9EE47DD1E92AF4A00DEA648 /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		C9EE47DE1E92AF4A00DEA648 /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
 		D0E75223F56AFC7308DE31B3 /* libPods-ArtRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArtRecorder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -437,8 +459,6 @@
 				C94E39031E8D6DC600F7F066 /* Main.storyboard */,
 				C94E391D1E8D708100F7F066 /* YJTabbarController.h */,
 				C94E391E1E8D708100F7F066 /* YJTabbarController.m */,
-				C94E39201E8EA14300F7F066 /* HomeTableViewController.h */,
-				C94E39211E8EA14300F7F066 /* HomeTableViewController.m */,
 			);
 			name = Sections;
 			path = "../../../../../../yinjianchen/Desktop/My finder/silver/ArtRecorder/ArtRecorder/Sections";
@@ -447,8 +467,15 @@
 		B3FE74D61E57548C009CBBDA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C94E39201E8EA14300F7F066 /* HomeTableViewController.h */,
+				C94E39211E8EA14300F7F066 /* HomeTableViewController.m */,
 				B3FE74E61E58C1D3009CBBDA /* HomeViewController.h */,
 				B3FE74E71E58C1D3009CBBDA /* HomeViewController.m */,
+				C984FB2D1E9544DA008A3510 /* ZhihuListModel.h */,
+				C984FB2E1E9544DA008A3510 /* ZhihuListModel.m */,
+				C984FB611E9BD0DF008A3510 /* buttonCell.h */,
+				C984FB621E9BD0DF008A3510 /* buttonCell.m */,
+				C984FB631E9BD0DF008A3510 /* buttonCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -590,6 +617,11 @@
 		C9077BBC1E69C1F8009D4615 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C984FB561E9A9FBB008A3510 /* XRCarouselView.h */,
+				C984FB571E9A9FBB008A3510 /* XRCarouselView.m */,
+				C984FB581E9A9FBB008A3510 /* XRPlaceholder.png */,
+				C9EE47DD1E92AF4A00DEA648 /* GPUImageBeautifyFilter.h */,
+				C9EE47DE1E92AF4A00DEA648 /* GPUImageBeautifyFilter.m */,
 				C9EE47B51E92659800DEA648 /* DBModel */,
 				C9EE47BA1E92659800DEA648 /* fmdb */,
 				C9EE479A1E924FF600DEA648 /* EHSocialShareViewModel.h */,
@@ -677,6 +709,10 @@
 				C94E392C1E8EBFB500F7F066 /* DetailViewController.m */,
 				C94E392E1E8EC6C800F7F066 /* PlayViewController.h */,
 				C94E392F1E8EC6C800F7F066 /* PlayViewController.m */,
+				C984FB661E9FC9AE008A3510 /* ZhuantiViewController.h */,
+				C984FB671E9FC9AE008A3510 /* ZhuantiViewController.m */,
+				C984FB691E9FD090008A3510 /* NotiViewController.h */,
+				C984FB6A1E9FD090008A3510 /* NotiViewController.m */,
 			);
 			name = Discover;
 			sourceTree = "<group>";
@@ -860,6 +896,7 @@
 				C9EE47A71E92507D00DEA648 /* share_wechat@2x.png in Resources */,
 				C9077C231E6C7D34009D4615 /* pause.png in Resources */,
 				C9EC74551E86DBB300F02D3A /* deer@2x.png in Resources */,
+				C984FB651E9BD0DF008A3510 /* buttonCell.xib in Resources */,
 				C9077BFF1E6C77BF009D4615 /* Star.png in Resources */,
 				B3FE74F41E598916009CBBDA /* RecorderViewController.xib in Resources */,
 				C9EC745C1E86DD3700F02D3A /* fire@2x.png in Resources */,
@@ -880,6 +917,7 @@
 				C9EE47A41E92507D00DEA648 /* share_qq@2x.png in Resources */,
 				C9EE47CE1E92659800DEA648 /* Info.plist in Resources */,
 				C9077C071E6C77BF009D4615 /* Triangle@3x.png in Resources */,
+				C984FB5A1E9A9FBB008A3510 /* XRPlaceholder.png in Resources */,
 				C9077C251E6C7D34009D4615 /* pause@3x.png in Resources */,
 				C9EE47D31E9288C000DEA648 /* Star 1@2x.png in Resources */,
 				C9077BC61E69C762009D4615 /* 1.jpg in Resources */,
@@ -970,15 +1008,21 @@
 				C99224B81E6711A700967818 /* FilterArray.m in Sources */,
 				B3FE74F31E598916009CBBDA /* RecorderViewController.m in Sources */,
 				C9EE47C71E92659800DEA648 /* JKDBHelper.m in Sources */,
+				C984FB2F1E9544DA008A3510 /* ZhihuListModel.m in Sources */,
 				C9EE47C91E92659800DEA648 /* FMDatabase.m in Sources */,
+				C984FB641E9BD0DF008A3510 /* buttonCell.m in Sources */,
 				B3FE74EF1E58CC66009CBBDA /* VideoViewController.m in Sources */,
 				C9EE47C81E92659800DEA648 /* JKDBModel.m in Sources */,
 				C94E39261E8EA28B00F7F066 /* YJVideoCell.m in Sources */,
 				B30E02D61E55EC220009B56E /* AppDelegate.m in Sources */,
 				C9EE47CD1E92659800DEA648 /* FMResultSet.m in Sources */,
+				C984FB6B1E9FD090008A3510 /* NotiViewController.m in Sources */,
+				C9EE47DF1E92AF4A00DEA648 /* GPUImageBeautifyFilter.m in Sources */,
 				B3F8C0051E5F39D200FE46AA /* FilterChooseView.m in Sources */,
+				C984FB591E9A9FBB008A3510 /* XRCarouselView.m in Sources */,
 				C94E39301E8EC6C800F7F066 /* PlayViewController.m in Sources */,
 				C94E38F61E8D6C1800F7F066 /* YJDiscoverViewController.m in Sources */,
+				C984FB681E9FC9AE008A3510 /* ZhuantiViewController.m in Sources */,
 				C9EE47D91E928D1C00DEA648 /* YJPersonViewController.m in Sources */,
 				C94E39221E8EA14300F7F066 /* HomeTableViewController.m in Sources */,
 				C94E392A1E8EA61100F7F066 /* YJVideoModel.m in Sources */,

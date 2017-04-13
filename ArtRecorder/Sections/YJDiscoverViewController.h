@@ -10,4 +10,6 @@
 
 @interface YJDiscoverViewController : UITableViewController
 
+@property(nonatomic,strong)NSString *query;
+
 @end

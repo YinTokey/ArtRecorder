@@ -8,9 +8,13 @@
 
 #import "RecorderViewController.h"
 #import "FilterChooseView.h"
-
+#import "GPUImageBeautifyFilter.h"
 #import "EHSocialShareViewModel.h"
 @interface RecorderViewController ()<GPUImageVideoCameraDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *fireBtn;
+@property (weak, nonatomic) IBOutlet UIButton *cornBtn;
+@property (weak, nonatomic) IBOutlet UIButton *wingBtn;
+@property (weak, nonatomic) IBOutlet UIButton *deerBtn;
 
 @property (nonatomic,retain) GPUImageVideoCamera *camera;
 @property (nonatomic,strong) GPUImageView * filterView;
@@ -33,6 +37,8 @@
 
 @property (nonatomic,strong)UIAlertView *shareAlertView;
 // Switching between front and back cameras
+@property (nonatomic,strong) NSString *faceUIString;
+
 @end
 
 @implementation RecorderViewController
@@ -40,12 +46,16 @@
     NSString *pathToMovie;
     NSMutableArray *titleArray;
     NSMutableArray *picArray;
-    
+    BOOL faceClick;
     
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    faceClick = NO;
+    self.cornBtn.hidden = YES;
+    self.deerBtn.hidden = YES;
+    self.fireBtn.hidden = YES;
+    self.wingBtn.hidden = YES;
     self.navigationController.navigationBar.hidden = YES;
     
     self.camera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPreset1280x720 cameraPosition:AVCaptureDevicePositionBack];
@@ -53,12 +63,7 @@
     self.camera.horizontallyMirrorFrontFacingCamera = NO;
     self.camera.horizontallyMirrorRearFacingCamera = NO;
     self.camera.delegate = self;
-//    if (self.filter) {
-//        [self.camera addTarget:_filter];
-//        [_filter addTarget:_filterView];
-//    }else{
-//        [self.camera addTarget:_filterView];
-//    }
+
     _filter = [[GPUImageFilter alloc] init];
     [self.camera addTarget:_filter];
     
@@ -294,15 +299,7 @@
     NSDictionary *imageOptions = nil;
     UIDeviceOrientation curDeviceOrientation = [[UIDevice currentDevice] orientation];
     int exifOrientation;
-    
-    /* kCGImagePropertyOrientation values
-     The intended display orientation of the image. If present, this key is a CFNumber value with the same value as defined
-     by the TIFF and EXIF specifications -- see enumeration of integer constants.
-     The value specified where the origin (0,0) of the image is located. If not present, a value of 1 is assumed.
-     
-     used when calling featuresInImage: options: The value for this key is an integer NSNumber from 1..8 as found in kCGImagePropertyOrientation.
-     If present, the detection will be done based on that orientation but the coordinates in the returned features will still be based on those of the image. */
-    
+
     enum {
         PHOTOS_EXIF_0ROW_TOP_0COL_LEFT			= 1, //   1  =  0th row is at the top, and 0th column is on the left (THE DEFAULT).
         PHOTOS_EXIF_0ROW_TOP_0COL_RIGHT			= 2, //   2  =  0th row is at the top, and 0th column is on the right.
@@ -345,13 +342,9 @@
     
     imageOptions = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:exifOrientation] forKey:CIDetectorImageOrientation];
     NSArray *features = [self.faceDetector featuresInImage:convertedImage options:imageOptions];
-    
-    // get the clean aperture
-    // the clean aperture is a rectangle that defines the portion of the encoded pixel dimensions
-    // that represents image data valid for display.
+
     CMFormatDescriptionRef fdesc = CMSampleBufferGetFormatDescription(sampleBuffer);
     CGRect clap = CMVideoFormatDescriptionGetCleanAperture(fdesc, false /*originIsTopLeft == false*/);
-    
     
     [self GPUVCWillOutputFeatures:features forClap:clap andOrientation:curDeviceOrientation];
     _faceThinking = NO;
@@ -368,15 +361,9 @@
         }
         else {
             self.capImageView.hidden = YES;
-            //            [self.faceView removeFromSuperview];
-            //            self.faceView = nil;
         }
         for ( CIFaceFeature *faceFeature in featureArray) {
-            
-            // find the correct position for the square layer within the previewLayer
-            // the feature box originates in the bottom left of the video frame.
-            // (Bottom right if mirroring is turned on)
-            //Update face bounds for iOS Coordinate System
+
             CGRect faceRect = [faceFeature bounds];
             
             // flip preview width and height
@@ -400,20 +387,7 @@
             CGRect rect = CGRectMake(previewBox.size.width - faceRect.origin.x - faceRect.size.width, faceRect.origin.y, faceRect.size.width, faceRect.size.height);
             if (fabs(rect.origin.x - self.faceBounds.origin.x) > 5.0) {
                 self.faceBounds = rect;
-                //                if (self.faceView) {
-                //                    [self.faceView removeFromSuperview];
-                //                    self.faceView =  nil;
-                //                }
-                //
-                //                // create a UIView using the bounds of the face
-                //                self.faceView = [[UIView alloc] initWithFrame:self.faceBounds];
-                //
-                //                // add a border around the newly created UIView
-                //                self.faceView.layer.borderWidth = 1;
-                //                self.faceView.layer.borderColor = [[UIColor redColor] CGColor];
-                //
-                //                // add the new view to create a box around the face
-                //                [self.view addSubview:self.faceView];
+
             }
         }
     });
@@ -435,11 +409,44 @@
     if (!_elementView) {
         _elementView = [[UIView alloc] initWithFrame:self.view.frame];
         _capImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 160)];
-        [_capImageView setImage:[UIImage imageNamed:@"fire.png"]];
+        [_capImageView setImage:[UIImage imageNamed:_faceUIString]];
         [_elementView addSubview:_capImageView];
     }
     return _elementView;
 }
+- (IBAction)hornClick:(id)sender {
+    _faceUIString = @"horn.png";
+    [_capImageView setImage:[UIImage imageNamed:_faceUIString]];
+}
 
+- (IBAction)wingClick:(id)sender {
+    _faceUIString = @"wing.png";
+    [_capImageView setImage:[UIImage imageNamed:_faceUIString]];
+}
+
+- (IBAction)deer:(id)sender {
+    _faceUIString = @"deer.png";
+    [_capImageView setImage:[UIImage imageNamed:_faceUIString]];
+}
+- (IBAction)fire:(id)sender {
+    _faceUIString = @"fire.png";
+    [_capImageView setImage:[UIImage imageNamed:_faceUIString]];
+}
+
+- (IBAction)faceClcik:(id)sender {
+    faceClick = !faceClick;
+    if(faceClick){
+        self.cornBtn.hidden = NO;
+        self.deerBtn.hidden = NO;
+        self.fireBtn.hidden = NO;
+        self.wingBtn.hidden = NO;
+    }else{
+        self.cornBtn.hidden = YES;
+        self.deerBtn.hidden = YES;
+        self.fireBtn.hidden = YES;
+        self.wingBtn.hidden = YES;
+    }
+    
+}
 
 @end

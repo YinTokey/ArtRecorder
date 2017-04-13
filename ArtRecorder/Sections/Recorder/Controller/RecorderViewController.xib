@@ -12,13 +12,16 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecorderViewController">
             <connections>
                 <outlet property="closeBtn" destination="ni5-yn-GLV" id="CU4-h2-HZ3"/>
+                <outlet property="cornBtn" destination="hSg-gv-6xI" id="ZWn-lM-lMK"/>
+                <outlet property="deerBtn" destination="flC-ku-fJb" id="kSd-eg-Xnf"/>
                 <outlet property="faceBtn" destination="0Pw-f0-0Us" id="mZK-mj-47r"/>
                 <outlet property="filterBtn" destination="4SP-1i-sR5" id="irD-OZ-fGm"/>
-                <outlet property="fireworksBtn" destination="oTs-Vv-O4S" id="TPK-Op-JkH"/>
+                <outlet property="fireBtn" destination="ZvY-kN-UcP" id="wU3-jf-ahk"/>
                 <outlet property="startBtn" destination="JdQ-oq-eum" id="tBg-qj-XAL"/>
                 <outlet property="switchBtn" destination="fKe-ZM-tRV" id="3L7-Sw-sje"/>
                 <outlet property="timeLabel" destination="f1Y-WG-w2f" id="HGS-nM-V5C"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wingBtn" destination="8dZ-83-xqe" id="bfG-om-d9w"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -26,63 +29,147 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTs-Vv-O4S">
-                    <rect key="frame" x="37" y="21" width="36" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pw-f0-0Us">
+                    <rect key="frame" x="34" y="18" width="31" height="37"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <state key="normal" image="Star.png"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SP-1i-sR5">
-                    <rect key="frame" x="194" y="20" width="32" height="32"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <state key="normal" image="camera.png"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pw-f0-0Us">
-                    <rect key="frame" x="116" y="18" width="31" height="37"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="4R1-lF-glC"/>
+                        <constraint firstAttribute="height" constant="37" id="7eU-Ja-BJk"/>
+                    </constraints>
                     <state key="normal" image="face.png"/>
+                    <connections>
+                        <action selector="faceClcik:" destination="-1" eventType="touchUpInside" id="dvW-gN-8St"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ni5-yn-GLV">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ni5-yn-GLV">
                     <rect key="frame" x="283" y="22" width="24" height="28"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="BNG-sU-1HH"/>
+                        <constraint firstAttribute="height" constant="28" id="fTo-5c-gGm"/>
+                    </constraints>
                     <state key="normal" image="close.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKe-ZM-tRV">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKe-ZM-tRV">
                     <rect key="frame" x="266" y="465" width="38" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="FnX-mR-gRc"/>
+                        <constraint firstAttribute="height" constant="34" id="ku0-ST-RjP"/>
+                    </constraints>
                     <state key="normal" image="switch.png"/>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00：00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1Y-WG-w2f">
-                    <rect key="frame" x="116" y="412" width="88" height="27"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00：00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1Y-WG-w2f">
+                    <rect key="frame" x="123" y="412" width="74" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="Vk1-xf-leg"/>
+                        <constraint firstAttribute="width" constant="74" id="w9N-yw-6F6"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <color key="textColor" red="0.065213896330000007" green="0.59234637020000003" blue="0.94948929550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdQ-oq-eum">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdQ-oq-eum">
                     <rect key="frame" x="147" y="468" width="26" height="29"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="3A9-ep-qCa"/>
+                        <constraint firstAttribute="height" constant="29" id="vT7-hM-yAd"/>
+                    </constraints>
                     <state key="normal" image="Triangle.png"/>
                     <state key="selected" image="pause.png"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSg-gv-6xI">
+                    <rect key="frame" x="25" y="72" width="48" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="70U-K4-NE3"/>
+                        <constraint firstAttribute="height" constant="43" id="VUV-7v-WQU"/>
+                    </constraints>
+                    <state key="normal" image="horn.png"/>
+                    <connections>
+                        <action selector="hornClick:" destination="-1" eventType="touchUpInside" id="UIc-dk-LLc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dZ-83-xqe">
+                    <rect key="frame" x="107" y="72" width="48" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="AH1-xQ-cvY"/>
+                        <constraint firstAttribute="width" constant="48" id="Mbt-b1-9pO"/>
+                    </constraints>
+                    <state key="normal" image="wing.png"/>
+                    <connections>
+                        <action selector="wingClick:" destination="-1" eventType="touchUpInside" id="Y1X-1a-jUz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flC-ku-fJb">
+                    <rect key="frame" x="186" y="72" width="48" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="kOG-M8-tIg"/>
+                        <constraint firstAttribute="height" constant="43" id="nQf-Am-2cG"/>
+                    </constraints>
+                    <state key="normal" image="deer.png"/>
+                    <connections>
+                        <action selector="deer:" destination="-1" eventType="touchUpInside" id="XKx-g0-d8y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvY-kN-UcP">
+                    <rect key="frame" x="271" y="72" width="48" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="agB-Mt-ZdT"/>
+                        <constraint firstAttribute="height" constant="43" id="jdc-Sx-VGO"/>
+                    </constraints>
+                    <state key="normal" image="fire.png"/>
+                    <connections>
+                        <action selector="fire:" destination="-1" eventType="touchUpInside" id="0Bt-d4-pNH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SP-1i-sR5">
+                    <rect key="frame" x="144" y="20" width="32" height="32"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="NVL-p1-DYX"/>
+                        <constraint firstAttribute="height" constant="32" id="fet-Uh-e9t"/>
+                    </constraints>
+                    <state key="normal" image="camera.png"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="flC-ku-fJb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="0j0-oP-jrV"/>
+                <constraint firstItem="ZvY-kN-UcP" firstAttribute="leading" secondItem="flC-ku-fJb" secondAttribute="trailing" constant="37" id="1Ht-bb-wHl"/>
+                <constraint firstItem="ZvY-kN-UcP" firstAttribute="top" secondItem="ni5-yn-GLV" secondAttribute="bottom" constant="22" id="794-gQ-uZo"/>
+                <constraint firstItem="f1Y-WG-w2f" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9uy-WQ-2Im"/>
+                <constraint firstItem="4SP-1i-sR5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="A04-0x-sQb"/>
+                <constraint firstItem="JdQ-oq-eum" firstAttribute="top" secondItem="f1Y-WG-w2f" secondAttribute="bottom" constant="29" id="EPA-gL-VBP"/>
+                <constraint firstAttribute="bottom" secondItem="JdQ-oq-eum" secondAttribute="bottom" constant="71" id="KPn-uE-Fgr"/>
+                <constraint firstAttribute="trailing" secondItem="ni5-yn-GLV" secondAttribute="trailing" constant="13" id="Lm5-rL-UEA"/>
+                <constraint firstItem="0Pw-f0-0Us" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="18" id="NDH-aF-ad1"/>
+                <constraint firstAttribute="trailing" secondItem="fKe-ZM-tRV" secondAttribute="trailing" constant="16" id="XZh-iR-UHp"/>
+                <constraint firstItem="hSg-gv-6xI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="bB6-pP-26i"/>
+                <constraint firstItem="4SP-1i-sR5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bXF-0q-wZi"/>
+                <constraint firstItem="0Pw-f0-0Us" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="34" id="cyT-7m-ZWz"/>
+                <constraint firstItem="hSg-gv-6xI" firstAttribute="top" secondItem="0Pw-f0-0Us" secondAttribute="bottom" constant="17" id="fyS-ix-66L"/>
+                <constraint firstAttribute="trailing" secondItem="ZvY-kN-UcP" secondAttribute="trailing" constant="1" id="jDC-4w-sKl"/>
+                <constraint firstItem="ni5-yn-GLV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="kXR-jB-S9i"/>
+                <constraint firstItem="JdQ-oq-eum" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kYa-9J-MU9"/>
+                <constraint firstAttribute="bottom" secondItem="fKe-ZM-tRV" secondAttribute="bottom" constant="69" id="tYm-0Z-oAB"/>
+                <constraint firstItem="8dZ-83-xqe" firstAttribute="leading" secondItem="hSg-gv-6xI" secondAttribute="trailing" constant="34" id="vSZ-z1-8Qp"/>
+                <constraint firstItem="8dZ-83-xqe" firstAttribute="top" secondItem="4SP-1i-sR5" secondAttribute="bottom" constant="20" id="zmL-F3-j6w"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <point key="canvasLocation" x="-348" y="-337"/>
         </view>
     </objects>
     <resources>
-        <image name="Star.png" width="25" height="25"/>
         <image name="Triangle.png" width="43" height="43"/>
         <image name="camera.png" width="25" height="25"/>
         <image name="close.png" width="23" height="22"/>
+        <image name="deer.png" width="98" height="49"/>
         <image name="face.png" width="25" height="25"/>
+        <image name="fire.png" width="140" height="96"/>
+        <image name="horn.png" width="63" height="49"/>
         <image name="pause.png" width="17" height="36"/>
         <image name="switch.png" width="26" height="24"/>
+        <image name="wing.png" width="188" height="49"/>
     </resources>
 </document>

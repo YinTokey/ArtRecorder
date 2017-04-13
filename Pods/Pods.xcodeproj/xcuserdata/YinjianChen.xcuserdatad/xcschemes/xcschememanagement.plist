@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GPUImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,27 +52,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D8A6DAF1C2DBCD299F7E74FC1F72525</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4C094B65910D3654F7FA3DFB6234F86B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>4F69F82C1EEBC0A05686A3B0FECD2FDB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>75FED98E5A63730FEDBB26E8E736D2B8</key>
+		<key>5C408BC27DC06B1616C93C5A3526D4E3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>611D21FA78A460C976A6580EFD0286B4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7140C1246877F7FDAF5A473E4BB88699</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7B9E8564E15648C78C3A6B5426B38D46</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E033EDB5EC0819481B0546434FA577B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -78,11 +93,6 @@
 			<true/>
 		</dict>
 		<key>B5E289E0A32AE19BC4BE45CA79E10436</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CB3A5C397B7FDC17A4E9CD3B31DCAC34</key>
 		<dict>
 			<key>primary</key>
 			<true/>

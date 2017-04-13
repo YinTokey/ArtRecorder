@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "RecorderViewController.h"
 #import "VideoViewController.h"
+
 @interface HomeViewController ()
 
 @end
@@ -53,6 +54,7 @@
         [self.navigationController pushViewController:videoVC animated:NO];
     }];
     
+    openBtn.hidden = YES;
 }
 
 

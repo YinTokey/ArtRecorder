@@ -25,7 +25,7 @@
 
     self.datasourceDics = [NSMutableArray array];
     
-    BmobQuery   *bquery = [BmobQuery queryWithClassName:@"IGN"];
+    BmobQuery   *bquery = [BmobQuery queryWithClassName:_query];
     //查找GameScore表的数据
     [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         for(BmobObject *obj in array){
