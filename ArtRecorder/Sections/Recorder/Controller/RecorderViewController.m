@@ -11,6 +11,10 @@
 #import "GPUImageBeautifyFilter.h"
 #import "EHSocialShareViewModel.h"
 @interface RecorderViewController ()<GPUImageVideoCameraDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *fireBtn;
+@property (weak, nonatomic) IBOutlet UIButton *cornBtn;
+@property (weak, nonatomic) IBOutlet UIButton *wingBtn;
+@property (weak, nonatomic) IBOutlet UIButton *deerBtn;
 
 @property (nonatomic,retain) GPUImageVideoCamera *camera;
 @property (nonatomic,strong) GPUImageView * filterView;
@@ -42,11 +46,16 @@
     NSString *pathToMovie;
     NSMutableArray *titleArray;
     NSMutableArray *picArray;
+    BOOL faceClick;
     
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    faceClick = NO;
+    self.cornBtn.hidden = YES;
+    self.deerBtn.hidden = YES;
+    self.fireBtn.hidden = YES;
+    self.wingBtn.hidden = YES;
     self.navigationController.navigationBar.hidden = YES;
     
     self.camera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPreset1280x720 cameraPosition:AVCaptureDevicePositionBack];
@@ -424,5 +433,20 @@
     [_capImageView setImage:[UIImage imageNamed:_faceUIString]];
 }
 
+- (IBAction)faceClcik:(id)sender {
+    faceClick = !faceClick;
+    if(faceClick){
+        self.cornBtn.hidden = NO;
+        self.deerBtn.hidden = NO;
+        self.fireBtn.hidden = NO;
+        self.wingBtn.hidden = NO;
+    }else{
+        self.cornBtn.hidden = YES;
+        self.deerBtn.hidden = YES;
+        self.fireBtn.hidden = YES;
+        self.wingBtn.hidden = YES;
+    }
+    
+}
 
 @end

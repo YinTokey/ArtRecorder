@@ -13,8 +13,9 @@
 #import "ZhihuListModel.h"
 #import "XRCarouselView.h"
 #import "buttonCell.h"
-
-
+#import "ZhuantiViewController.h"
+#import "NotiViewController.h"
+#import "PlayViewController.h"
 @interface HomeTableViewController ()<XRCarouselViewDelegate,buttonCellDelegate>
 @property(nonatomic ,strong) NSMutableArray *datasourceDics;
 
@@ -156,16 +157,36 @@
 
 - (void)carouselView:(XRCarouselView *)carouselView clickImageAtIndex:(NSInteger)index{
     
+    ZhihuListModel *model = _zhihuListArray[index];
+    NSString *urlStr = [NSString stringWithFormat:@"https://news-at.zhihu.com/api/7/story/%@",model.id];
+    
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:urlStr parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSString *detailUrlStr = [responseObject objectForKey:@"share_url"];
+        PlayViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"playVC"];
+        vc.playUrl = detailUrlStr;
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
+    
+    
     
     NSLog(@"%zd",index);
 }
 
 - (void)ClickNoti{
-    NSLog(@"clickNoti");
+    NotiViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"NotiViewController"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)ClickZhuanti{
-    NSLog(@"clickzhuanti");
+    ZhuantiViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"ZhuantiViewController"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
