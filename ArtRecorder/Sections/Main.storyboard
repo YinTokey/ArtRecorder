@@ -170,60 +170,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6A-t6-Nc1">
-                                <rect key="frame" x="16" y="96" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.065213896330000007" green="0.59234637020000003" blue="0.94948929550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="Afe-y4-Vcz"/>
-                                    <constraint firstAttribute="height" constant="90" id="OLM-J2-zQ3"/>
-                                </constraints>
-                                <state key="normal" title="IGN">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="IGN:" destination="xtP-t6-Otw" eventType="touchUpInside" id="WQH-pm-YhX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gZ-kK-VWE">
-                                <rect key="frame" x="269" y="96" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.065213896330000007" green="0.59234637020000003" blue="0.94948929550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="9dw-g4-EUK"/>
-                                    <constraint firstAttribute="height" constant="90" id="jIq-t6-tYF"/>
-                                </constraints>
-                                <state key="normal" title="纪录片">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="record:" destination="xtP-t6-Otw" eventType="touchUpInside" id="bZj-Ag-pg1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUK-3V-yzr">
-                                <rect key="frame" x="142" y="96" width="90" height="90"/>
-                                <color key="backgroundColor" red="0.065213896330000007" green="0.59234637020000003" blue="0.94948929550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="CXW-Ru-umN"/>
-                                    <constraint firstAttribute="height" constant="90" id="Gp5-84-Tmm"/>
-                                </constraints>
-                                <state key="normal" title="谷阿莫">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="guamo:" destination="xtP-t6-Otw" eventType="touchUpInside" id="pDe-1q-p47"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tjz-vX-f8B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2gZ-kK-VWE" firstAttribute="leading" secondItem="AUK-3V-yzr" secondAttribute="trailing" constant="37" id="6Uk-Py-ZaQ"/>
-                            <constraint firstItem="AUK-3V-yzr" firstAttribute="top" secondItem="eT1-9V-K7Y" secondAttribute="bottom" constant="32" id="BNc-tj-5xj"/>
-                            <constraint firstItem="AUK-3V-yzr" firstAttribute="centerX" secondItem="Ruo-Sb-KzE" secondAttribute="centerX" id="GeK-Th-la1"/>
-                            <constraint firstItem="AUK-3V-yzr" firstAttribute="leading" secondItem="I6A-t6-Nc1" secondAttribute="trailing" constant="36" id="Tdd-gh-Erh"/>
-                            <constraint firstItem="I6A-t6-Nc1" firstAttribute="top" secondItem="eT1-9V-K7Y" secondAttribute="bottom" constant="32" id="d9Y-x1-gOy"/>
-                            <constraint firstItem="2gZ-kK-VWE" firstAttribute="top" secondItem="eT1-9V-K7Y" secondAttribute="bottom" constant="32" id="v0S-Xq-aPg"/>
+                            <constraint firstItem="Da2-VX-6TA" firstAttribute="top" secondItem="tjz-vX-f8B" secondAttribute="bottom" id="KA6-Nc-Ew7"/>
+                            <constraint firstItem="tjz-vX-f8B" firstAttribute="top" secondItem="Ruo-Sb-KzE" secondAttribute="top" id="btC-y7-FFn"/>
+                            <constraint firstItem="tjz-vX-f8B" firstAttribute="leading" secondItem="Ruo-Sb-KzE" secondAttribute="leading" id="fIo-O3-LJg"/>
+                            <constraint firstAttribute="trailing" secondItem="tjz-vX-f8B" secondAttribute="trailing" id="hqn-px-lTk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SLs-ue-zjg"/>
+                    <connections>
+                        <outlet property="tableview" destination="tjz-vX-f8B" id="Wz0-wl-xE3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRy-7e-VnT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

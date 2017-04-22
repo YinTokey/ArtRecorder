@@ -8,8 +8,9 @@
 
 #import "ZhuantiViewController.h"
 #import "YJDiscoverViewController.h"
-
-@interface ZhuantiViewController ()
+#import <Bmob.h>
+@interface ZhuantiViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic,strong) NSMutableArray *Array;
 
 @end
 
@@ -17,31 +18,73 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.tableview.dataSource = self;
+    self.tableview.delegate = self;
+    self.Array = [NSMutableArray array];
+    
+    BmobQuery   *bquery = [BmobQuery queryWithClassName:@"subject"];
+    //查找GameScore表的数据
+    [bquery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+        for(BmobObject *obj in array){
+            
+            NSString *title = [NSString stringWithFormat:@"%@",[obj objectForKey:@"title"]];
+
+            
+            [self.Array addObject:title];
+        }
+        [self.tableview reloadData];
+    }];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _Array.count;
+
 }
-- (IBAction)IGN:(id)sender {
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    YJDiscoverViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"YJDiscoverViewController"];
-    vc.query = @"IGN";
-    [self.navigationController pushViewController:vc animated:YES];
+    static NSString *reuseId = @"reuseCell";
     
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseId];
+    if (cell==nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseId];
+    }
+    
+    NSString *string = self.Array[indexPath.row];
+    
+    cell.textLabel.text = string;
+    
+    return cell;
 }
-- (IBAction)guamo:(id)sender {
-    YJDiscoverViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"YJDiscoverViewController"];
-    vc.query = @"guamo";
-    [self.navigationController pushViewController:vc animated:YES];
-    
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+        YJDiscoverViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"YJDiscoverViewController"];
+        vc.query = _Array[indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
+
 }
-- (IBAction)record:(id)sender {
-    YJDiscoverViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"YJDiscoverViewController"];
-    vc.query = @"record";
-    [self.navigationController pushViewController:vc animated:YES];
+
+#warning Incomplete implementation, return the number of rows
     
-}
+//- (IBAction)IGN:(id)sender {
+//    
+//    YJDiscoverViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"YJDiscoverViewController"];
+//    vc.query = @"IGN";
+//    [self.navigationController pushViewController:vc animated:YES];
+//    
+//}
+//- (IBAction)guamo:(id)sender {
+//    YJDiscoverViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"YJDiscoverViewController"];
+//    vc.query = @"guamo";
+//    [self.navigationController pushViewController:vc animated:YES];
+//    
+//}
+//- (IBAction)record:(id)sender {
+//    YJDiscoverViewController *vc = [[self storyboard]instantiateViewControllerWithIdentifier:@"YJDiscoverViewController"];
+//    vc.query = @"record";
+//    [self.navigationController pushViewController:vc animated:YES];
+//    
+//}
 
 @end
